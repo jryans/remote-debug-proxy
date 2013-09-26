@@ -20,7 +20,7 @@ cauldron.awesome(); // "awesome"
 
 Contributions are welcome and appreciated!
 
-Please follow the [Contributor Guidelines](cauldron/blob/master/CONTRIBUTE.md) for this project.
+Please follow the [Contributor Guidelines](CONTRIBUTE.md) for this project.
 
 ## Release History
 _(Nothing yet)_
