@@ -11,6 +11,6 @@ define([], function () {
     message += statusUpdate.direction + " ";
     message += statusUpdate.actor + ":\n";
     message += statusUpdate.packet + "\n";
-    $('#status').prepend(message);
+    $('#status').append(message);
   };
 });
