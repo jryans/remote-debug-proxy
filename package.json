@@ -21,8 +21,8 @@
       "url": "https://github.com/jryans/cauldron/blob/master/LICENSE.md"
     }
   ],
-  "bin": "bin/main",
-  "main": "lib/main",
+  "bin": "bin/main.js",
+  "main": "lib/main.js",
   "engines": {
     "node": "0.8"
   },
