@@ -6,11 +6,20 @@ define([], function () {
 
   socket.onmessage = function (event) {
     var statusUpdate = JSON.parse(event.data);
-    var message = "";
-    message += "[" + statusUpdate.id + "] ";
-    message += statusUpdate.direction + " ";
-    message += statusUpdate.actor + ":\n";
-    message += statusUpdate.packet + "\n";
+    var message = '';
+    message += '[' + statusUpdate.id + '] ';
+    message += statusUpdate.direction + ' ';
+    message += statusUpdate.actor + ':\n';
+    message += statusUpdate.packet + '\n';
     $('#status').append(message);
   };
+
+  $('#select-all').click(function() {
+    var status = document.querySelector('#status');
+    var range = document.createRange();
+    range.selectNodeContents(status);
+    var selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+  });
 });
