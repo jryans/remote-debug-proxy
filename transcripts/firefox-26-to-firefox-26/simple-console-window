@@ -1,0 +1,303 @@
+window object successful
+
+[1] from server:
+127:{
+  "from": "root",
+  "applicationType": "browser",
+  "testConnectionPrefix": "conn0.",
+  "traits": {
+    "sources": true
+  }
+}
+[2] to client:
+127:{
+  "from": "root",
+  "applicationType": "browser",
+  "testConnectionPrefix": "conn0.",
+  "traits": {
+    "sources": true
+  }
+}
+[3] from client:
+40:{
+  "to": "root",
+  "type": "listTabs"
+}
+[4] to server:
+40:{
+  "to": "root",
+  "type": "listTabs"
+}
+[5] from server:
+904:{
+  "from": "root",
+  "selected": 0,
+  "tabs": [
+    {
+      "actor": "conn0.tab1",
+      "title": "Connect",
+      "url": "chrome://browser/content/devtools/connect.xhtml#",
+      "consoleActor": "conn0.console9",
+      "gcliActor": "conn0.gcli10",
+      "styleEditorActor": "conn0.styleEditor11",
+      "inspectorActor": "conn0.12",
+      "traceActor": "conn0.trace13"
+    },
+    {
+      "actor": "conn0.tab2",
+      "title": "about:buildconfig",
+      "url": "about:buildconfig",
+      "consoleActor": "conn0.console14",
+      "gcliActor": "conn0.gcli15",
+      "styleEditorActor": "conn0.styleEditor16",
+      "inspectorActor": "conn0.17",
+      "traceActor": "conn0.trace18"
+    }
+  ],
+  "chromeDebugger": "conn0.chromeDebugger3",
+  "consoleActor": "conn0.console4",
+  "gcliActor": "conn0.gcli5",
+  "profilerActor": "conn0.profiler6",
+  "webappsActor": "conn0.webapps7",
+  "deviceActor": "conn0.8"
+}
+[6] to client:
+904:{
+  "from": "root",
+  "selected": 0,
+  "tabs": [
+    {
+      "actor": "conn0.tab1",
+      "title": "Connect",
+      "url": "chrome://browser/content/devtools/connect.xhtml#",
+      "consoleActor": "conn0.console9",
+      "gcliActor": "conn0.gcli10",
+      "styleEditorActor": "conn0.styleEditor11",
+      "inspectorActor": "conn0.12",
+      "traceActor": "conn0.trace13"
+    },
+    {
+      "actor": "conn0.tab2",
+      "title": "about:buildconfig",
+      "url": "about:buildconfig",
+      "consoleActor": "conn0.console14",
+      "gcliActor": "conn0.gcli15",
+      "styleEditorActor": "conn0.styleEditor16",
+      "inspectorActor": "conn0.17",
+      "traceActor": "conn0.trace18"
+    }
+  ],
+  "chromeDebugger": "conn0.chromeDebugger3",
+  "consoleActor": "conn0.console4",
+  "gcliActor": "conn0.gcli5",
+  "profilerActor": "conn0.profiler6",
+  "webappsActor": "conn0.webapps7",
+  "deviceActor": "conn0.8"
+}
+[7] from client:
+44:{
+  "to": "conn0.tab1",
+  "type": "attach"
+}
+[8] to server:
+44:{
+  "to": "conn0.tab1",
+  "type": "attach"
+}
+[9] from server:
+87:{
+  "type": "tabAttached",
+  "threadActor": "conn0.context19",
+  "from": "conn0.tab1"
+}
+[10] to client:
+87:{
+  "type": "tabAttached",
+  "threadActor": "conn0.context19",
+  "from": "conn0.tab1"
+}
+[11] from client:
+155:{
+  "to": "conn0.console9",
+  "type": "startListeners",
+  "listeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ]
+}
+[12] to server:
+155:{
+  "to": "conn0.console9",
+  "type": "startListeners",
+  "listeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ]
+}
+[13] from server:
+164:{
+  "startedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "nativeConsoleAPI": true,
+  "from": "conn0.console9"
+}
+[14] to client:
+164:{
+  "startedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "nativeConsoleAPI": true,
+  "from": "conn0.console9"
+}
+[15] from client:
+118:{
+  "to": "conn0.console9",
+  "type": "getCachedMessages",
+  "messageTypes": [
+    "PageError",
+    "ConsoleAPI"
+  ]
+}
+[16] to server:
+118:{
+  "to": "conn0.console9",
+  "type": "getCachedMessages",
+  "messageTypes": [
+    "PageError",
+    "ConsoleAPI"
+  ]
+}
+[17] from server:
+48:{
+  "from": "conn0.console9",
+  "messages": []
+}
+[18] to client:
+48:{
+  "from": "conn0.console9",
+  "messages": []
+}
+[19] from client:
+84:{
+  "to": "conn0.console9",
+  "type": "autocomplete",
+  "text": "w",
+  "cursor": 1
+}
+[20] to server:
+84:{
+  "to": "conn0.console9",
+  "type": "autocomplete",
+  "text": "w",
+  "cursor": 1
+}
+[21] from server:
+96:{
+  "from": "conn0.console9",
+  "matches": [
+    "watch",
+    "window"
+  ],
+  "matchProp": "w"
+}
+[22] to client:
+96:{
+  "from": "conn0.console9",
+  "matches": [
+    "watch",
+    "window"
+  ],
+  "matchProp": "w"
+}
+[23] from client:
+94:{
+  "to": "conn0.console9",
+  "type": "evaluateJS",
+  "text": "window",
+  "frameActor": null
+}
+[24] to server:
+94:{
+  "to": "conn0.console9",
+  "type": "evaluateJS",
+  "text": "window",
+  "frameActor": null
+}
+[25] from server:
+283:{
+  "from": "conn0.console9",
+  "input": "window",
+  "result": {
+    "type": "object",
+    "class": "Window",
+    "actor": "conn0.obj20",
+    "extensible": true,
+    "frozen": false,
+    "sealed": false
+  },
+  "timestamp": 1380687441073,
+  "exception": null,
+  "helperResult": null
+}
+[26] to client:
+283:{
+  "from": "conn0.console9",
+  "input": "window",
+  "result": {
+    "type": "object",
+    "class": "Window",
+    "actor": "conn0.obj20",
+    "extensible": true,
+    "frozen": false,
+    "sealed": false
+  },
+  "timestamp": 1380687441073,
+  "exception": null,
+  "helperResult": null
+}
+[27] from server:
+51:{
+  "from": "conn0.tab1",
+  "type": "tabDetached"
+}48:{
+  "from": "root",
+  "type": "tabListChanged"
+}
+[28] to client:
+51:{
+  "from": "conn0.tab1",
+  "type": "tabDetached"
+}48:{
+  "from": "root",
+  "type": "tabListChanged"
+}
+[29] from client:
+46:{
+  "to": "conn0.obj20",
+  "type": "release"
+}76:{
+  "to": "conn0.console9",
+  "type": "stopListeners",
+  "listeners": null
+}
+[30] to server:
+46:{
+  "to": "conn0.obj20",
+  "type": "release"
+}76:{
+  "to": "conn0.console9",
+  "type": "stopListeners",
+  "listeners": null
+}
+

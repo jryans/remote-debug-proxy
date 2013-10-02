@@ -1,0 +1,329 @@
+inspection fails
+
+[1] from server:
+91:{
+  "from": "root",
+  "applicationType": "browser",
+  "traits": {
+    "sources": true
+  }
+}
+[2] to client:
+91:{
+  "from": "root",
+  "applicationType": "browser",
+  "traits": {
+    "sources": true
+  }
+}
+[3] from client:
+40:{
+  "to": "root",
+  "type": "listTabs"
+}
+[4] to server:
+40:{
+  "to": "root",
+  "type": "listTabs"
+}
+[5] from server:
+495:{
+  "from": "root",
+  "selected": 0,
+  "tabs": [
+    {
+      "actor": "conn0.tab3",
+      "title": "Connect",
+      "url": "chrome://browser/content/devtools/connect.xhtml#",
+      "consoleActor": "conn0.console7"
+    },
+    {
+      "actor": "conn0.tab4",
+      "title": "about:buildconfig",
+      "url": "about:buildconfig",
+      "consoleActor": "conn0.console8"
+    }
+  ],
+  "chromeDebugger": "conn0.chromeDebugger2",
+  "consoleActor": "conn0.console5",
+  "profilerActor": "conn0.profiler6"
+}
+[6] to client:
+495:{
+  "from": "root",
+  "selected": 0,
+  "tabs": [
+    {
+      "actor": "conn0.tab3",
+      "title": "Connect",
+      "url": "chrome://browser/content/devtools/connect.xhtml#",
+      "consoleActor": "conn0.console7"
+    },
+    {
+      "actor": "conn0.tab4",
+      "title": "about:buildconfig",
+      "url": "about:buildconfig",
+      "consoleActor": "conn0.console8"
+    }
+  ],
+  "chromeDebugger": "conn0.chromeDebugger2",
+  "consoleActor": "conn0.console5",
+  "profilerActor": "conn0.profiler6"
+}
+[7] from client:
+44:{
+  "to": "conn0.tab3",
+  "type": "attach"
+}
+[8] to server:
+44:{
+  "to": "conn0.tab3",
+  "type": "attach"
+}
+[9] from server:
+86:{
+  "type": "tabAttached",
+  "threadActor": "conn0.context9",
+  "from": "conn0.tab3"
+}
+[10] to client:
+86:{
+  "type": "tabAttached",
+  "threadActor": "conn0.context9",
+  "from": "conn0.tab3"
+}
+[11] from client:
+155:{
+  "to": "conn0.console7",
+  "type": "startListeners",
+  "listeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ]
+}
+[12] to server:
+155:{
+  "to": "conn0.console7",
+  "type": "startListeners",
+  "listeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ]
+}
+[13] from server:
+164:{
+  "startedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "nativeConsoleAPI": true,
+  "from": "conn0.console7"
+}
+[14] to client:
+164:{
+  "startedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "nativeConsoleAPI": true,
+  "from": "conn0.console7"
+}
+[15] from client:
+118:{
+  "to": "conn0.console7",
+  "type": "getCachedMessages",
+  "messageTypes": [
+    "PageError",
+    "ConsoleAPI"
+  ]
+}
+[16] to server:
+118:{
+  "to": "conn0.console7",
+  "type": "getCachedMessages",
+  "messageTypes": [
+    "PageError",
+    "ConsoleAPI"
+  ]
+}
+[17] from server:
+48:{
+  "from": "conn0.console7",
+  "messages": []
+}
+[18] to client:
+48:{
+  "from": "conn0.console7",
+  "messages": []
+}
+[19] from client:
+84:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "w",
+  "cursor": 1
+}
+[20] to server:
+84:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "w",
+  "cursor": 1
+}
+[21] from server:
+96:{
+  "from": "conn0.console7",
+  "matches": [
+    "watch",
+    "window"
+  ],
+  "matchProp": "w"
+}
+[22] to client:
+96:{
+  "from": "conn0.console7",
+  "matches": [
+    "watch",
+    "window"
+  ],
+  "matchProp": "w"
+}
+[23] from client:
+94:{
+  "to": "conn0.console7",
+  "type": "evaluateJS",
+  "text": "window",
+  "frameActor": null
+}
+[24] to server:
+94:{
+  "to": "conn0.console7",
+  "type": "evaluateJS",
+  "text": "window",
+  "frameActor": null
+}
+[25] from server:
+313:{
+  "from": "conn0.console7",
+  "input": "window",
+  "result": {
+    "type": "object",
+    "className": "Window",
+    "displayString": "[object Window]",
+    "inspectable": true,
+    "actor": "conn0.consoleObj10"
+  },
+  "timestamp": 1380689403582,
+  "error": null,
+  "errorMessage": null,
+  "helperResult": null
+}
+[26] to client:
+313:{
+  "from": "conn0.console7",
+  "input": "window",
+  "result": {
+    "type": "object",
+    "className": "Window",
+    "displayString": "[object Window]",
+    "inspectable": true,
+    "actor": "conn0.consoleObj10"
+  },
+  "timestamp": 1380689403582,
+  "error": null,
+  "errorMessage": null,
+  "helperResult": null
+}
+[27] from client:
+68:{
+  "to": "conn0.consoleObj10",
+  "type": "prototypeAndProperties"
+}
+[28] to server:
+68:{
+  "to": "conn0.consoleObj10",
+  "type": "prototypeAndProperties"
+}
+[29] from server:
+178:{
+  "error": "unrecognizedPacketType",
+  "message": "Actor \"conn0.consoleObj10\" does not recognize the packet type \"prototypeAndProperties\"",
+  "from": "conn0.consoleObj10"
+}
+[30] to client:
+178:{
+  "error": "unrecognizedPacketType",
+  "message": "Actor \"conn0.consoleObj10\" does not recognize the packet type \"prototypeAndProperties\"",
+  "from": "conn0.consoleObj10"
+}
+[31] from client:
+53:{
+  "to": "conn0.consoleObj10",
+  "type": "release"
+}76:{
+  "to": "conn0.console7",
+  "type": "stopListeners",
+  "listeners": null
+}
+[32] to server:
+53:{
+  "to": "conn0.consoleObj10",
+  "type": "release"
+}76:{
+  "to": "conn0.console7",
+  "type": "stopListeners",
+  "listeners": null
+}
+[33] from server:
+34:{
+  "from": "conn0.consoleObj10"
+}136:{
+  "stoppedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "from": "conn0.console7"
+}
+[34] to client:
+34:{
+  "from": "conn0.consoleObj10"
+}136:{
+  "stoppedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "from": "conn0.console7"
+}
+[35] from client:
+44:{
+  "to": "conn0.tab3",
+  "type": "detach"
+}
+[36] to server:
+44:{
+  "to": "conn0.tab3",
+  "type": "detach"
+}
+[37] from server:
+48:{
+  "type": "detached",
+  "from": "conn0.tab3"
+}
+[38] to client:
+48:{
+  "type": "detached",
+  "from": "conn0.tab3"
+}
+
