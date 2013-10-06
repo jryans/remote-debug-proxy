@@ -3,4 +3,4 @@
 
 let cauldron = require('../lib/cauldron');
 
-cauldron();
+cauldron.start();
