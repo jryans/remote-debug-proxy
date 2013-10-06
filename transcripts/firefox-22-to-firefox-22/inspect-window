@@ -1,0 +1,6033 @@
+[1] from server:
+91:{
+  "from": "root",
+  "applicationType": "browser",
+  "traits": {
+    "sources": true
+  }
+}
+[2] to client:
+91:{
+  "from": "root",
+  "applicationType": "browser",
+  "traits": {
+    "sources": true
+  }
+}
+[3] from client:
+40:{
+  "to": "root",
+  "type": "listTabs"
+}
+[4] to server:
+40:{
+  "to": "root",
+  "type": "listTabs"
+}
+[5] from server:
+495:{
+  "from": "root",
+  "selected": 0,
+  "tabs": [
+    {
+      "actor": "conn0.tab3",
+      "title": "Connect",
+      "url": "chrome://browser/content/devtools/connect.xhtml#",
+      "consoleActor": "conn0.console7"
+    },
+    {
+      "actor": "conn0.tab4",
+      "title": "about:buildconfig",
+      "url": "about:buildconfig",
+      "consoleActor": "conn0.console8"
+    }
+  ],
+  "chromeDebugger": "conn0.chromeDebugger2",
+  "consoleActor": "conn0.console5",
+  "profilerActor": "conn0.profiler6"
+}
+[6] to client:
+495:{
+  "from": "root",
+  "selected": 0,
+  "tabs": [
+    {
+      "actor": "conn0.tab3",
+      "title": "Connect",
+      "url": "chrome://browser/content/devtools/connect.xhtml#",
+      "consoleActor": "conn0.console7"
+    },
+    {
+      "actor": "conn0.tab4",
+      "title": "about:buildconfig",
+      "url": "about:buildconfig",
+      "consoleActor": "conn0.console8"
+    }
+  ],
+  "chromeDebugger": "conn0.chromeDebugger2",
+  "consoleActor": "conn0.console5",
+  "profilerActor": "conn0.profiler6"
+}
+[7] from client:
+44:{
+  "to": "conn0.tab3",
+  "type": "attach"
+}
+[8] to server:
+44:{
+  "to": "conn0.tab3",
+  "type": "attach"
+}
+[9] from server:
+86:{
+  "type": "tabAttached",
+  "threadActor": "conn0.context9",
+  "from": "conn0.tab3"
+}
+[10] to client:
+86:{
+  "type": "tabAttached",
+  "threadActor": "conn0.context9",
+  "from": "conn0.tab3"
+}
+[11] from client:
+155:{
+  "to": "conn0.console7",
+  "type": "startListeners",
+  "listeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ]
+}
+[12] to server:
+155:{
+  "to": "conn0.console7",
+  "type": "startListeners",
+  "listeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ]
+}
+[13] from server:
+164:{
+  "startedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "nativeConsoleAPI": true,
+  "from": "conn0.console7"
+}
+[14] to client:
+164:{
+  "startedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "nativeConsoleAPI": true,
+  "from": "conn0.console7"
+}
+[15] from client:
+118:{
+  "to": "conn0.console7",
+  "type": "getCachedMessages",
+  "messageTypes": [
+    "PageError",
+    "ConsoleAPI"
+  ]
+}
+[16] to server:
+118:{
+  "to": "conn0.console7",
+  "type": "getCachedMessages",
+  "messageTypes": [
+    "PageError",
+    "ConsoleAPI"
+  ]
+}
+[17] from server:
+48:{
+  "from": "conn0.console7",
+  "messages": []
+}
+[18] to client:
+48:{
+  "from": "conn0.console7",
+  "messages": []
+}
+[19] from client:
+137:{
+  "to": "conn0.console7",
+  "type": "setPreferences",
+  "preferences": {
+    "NetworkMonitor.saveRequestAndResponseBodies": false
+  }
+}
+[20] to server:
+137:{
+  "to": "conn0.console7",
+  "type": "setPreferences",
+  "preferences": {
+    "NetworkMonitor.saveRequestAndResponseBodies": false
+  }
+}
+[21] from server:
+100:{
+  "updated": [
+    "NetworkMonitor.saveRequestAndResponseBodies"
+  ],
+  "from": "conn0.console7"
+}
+[22] to client:
+100:{
+  "updated": [
+    "NetworkMonitor.saveRequestAndResponseBodies"
+  ],
+  "from": "conn0.console7"
+}
+[23] from client:
+84:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "w",
+  "cursor": 1
+}
+[24] to server:
+84:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "w",
+  "cursor": 1
+}
+[25] from server:
+96:{
+  "from": "conn0.console7",
+  "matches": [
+    "watch",
+    "window"
+  ],
+  "matchProp": "w"
+}
+[26] to client:
+96:{
+  "from": "conn0.console7",
+  "matches": [
+    "watch",
+    "window"
+  ],
+  "matchProp": "w"
+}
+[27] from client:
+85:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "wi",
+  "cursor": 2
+}
+[28] to server:
+85:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "wi",
+  "cursor": 2
+}
+[29] from server:
+84:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "wi"
+}
+[30] to client:
+84:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "wi"
+}
+[31] from client:
+86:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "win",
+  "cursor": 3
+}
+[32] to server:
+86:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "win",
+  "cursor": 3
+}
+[33] from server:
+85:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "win"
+}
+[34] to client:
+85:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "win"
+}
+[35] from client:
+87:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "wind",
+  "cursor": 4
+}
+[36] to server:
+87:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "wind",
+  "cursor": 4
+}
+[37] from server:
+86:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "wind"
+}
+[38] to client:
+86:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "wind"
+}
+[39] from client:
+88:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "windo",
+  "cursor": 5
+}
+[40] to server:
+88:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "windo",
+  "cursor": 5
+}
+[41] from server:
+87:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "windo"
+}
+[42] to client:
+87:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "windo"
+}
+[43] from client:
+89:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "window",
+  "cursor": 6
+}
+[44] to server:
+89:{
+  "to": "conn0.console7",
+  "type": "autocomplete",
+  "text": "window",
+  "cursor": 6
+}
+[45] from server:
+88:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "window"
+}
+[46] to client:
+88:{
+  "from": "conn0.console7",
+  "matches": [
+    "window"
+  ],
+  "matchProp": "window"
+}
+[47] from client:
+72:{
+  "to": "conn0.console7",
+  "type": "evaluateJS",
+  "text": "window"
+}
+[48] to server:
+72:{
+  "to": "conn0.console7",
+  "type": "evaluateJS",
+  "text": "window"
+}
+[49] from server:
+313:{
+  "from": "conn0.console7",
+  "input": "window",
+  "result": {
+    "type": "object",
+    "className": "Window",
+    "displayString": "[object Window]",
+    "inspectable": true,
+    "actor": "conn0.consoleObj10"
+  },
+  "timestamp": 1380690326985,
+  "error": null,
+  "errorMessage": null,
+  "helperResult": null
+}
+[50] to client:
+313:{
+  "from": "conn0.console7",
+  "input": "window",
+  "result": {
+    "type": "object",
+    "className": "Window",
+    "displayString": "[object Window]",
+    "inspectable": true,
+    "actor": "conn0.consoleObj10"
+  },
+  "timestamp": 1380690326985,
+  "error": null,
+  "errorMessage": null,
+  "helperResult": null
+}
+[51] from client:
+63:{
+  "to": "conn0.consoleObj10",
+  "type": "inspectProperties"
+}
+[52] to server:
+63:{
+  "to": "conn0.consoleObj10",
+  "type": "inspectProperties"
+}
+[53] from server:
+80332:{
+  "from": "conn0.consoleObj10",
+  "properties": [
+    {
+      "name": "Application",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "[xpconnect wrapped (nsISupports, fuelIApplication, extIApplication, nsIObserver)]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj39"
+      }
+    },
+    {
+      "name": "Cu",
+      "configurable": false,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "nsXPCComponents_Utils",
+        "displayString": "({QueryInterface:function QueryInterface() {\n    [native code]\n}, reportError:function reportError() {\n    [native code]\n}, lookupMethod:function lookupMethod() {\n    [native code]\n}, get Sandbox () {\n    [native code]\n}, evalInSandbox:function evalInSandbox() {\n    [native code]\n}, import:function import() {\n    [native code]\n}, unload:function unload() {\n    [native code]\n}, getWeakReference:function getWeakReference() {\n    [native code]\n}, forceGC:function forceGC() {\n    [native code]\n}, forceCC:function forceCC() {\n    [native code]\n}, forceShrinkingGC:function forceShrinkingGC() {\n    [native code]\n}, schedulePreciseGC:function schedulePreciseGC() {\n    [native code]\n}, schedulePreciseShrinkingGC:function schedulePreciseShrinkingGC() {\n    [native code]\n}, nondeterministicGetWeakMapKeys:function nondeterministicGetWeakMapKeys() {\n    [native code]\n}, getJSTestingFunctions:function getJSTestingFunctions() {\n    [native code]\n}, getGlobalForObject:function getGlobalForObject() {\n    [native code]\n}, createObjectIn:function createObjectIn() {\n    [native code]\n}, createArrayIn:function createArrayIn() {\n    [native code]\n}, createDateIn:function createDateIn() {\n    [native code]\n}, makeObjectPropsNormal:function makeObjectPropsNormal() {\n    [native code]\n}, isDeadWrapper:function isDeadWrapper() {\n    [native code]\n}, recomputeWrappers:function recomputeWrappers() {\n    [native code]\n}, setWantXrays:function setWantXrays() {\n    [native code]\n}, getComponentsForScope:function getComponentsForScope() {\n    [native code]\n}, dispatch:function dispatch() {\n    [native code]\n}, get strict () {\n    [native code]\n}, set strict () {\n    [native code]\n}, get werror () {\n    [native code]\n}, set werror () {\n    [native code]\n}, get methodjit () {\n    [native code]\n}, set methodjit () {\n    [native code]\n}, get methodjit_always () {\n    [native code]\n}, set methodjit_always () {\n    [native code]\n}, get strict_mode () {\n    [native code]\n}, set strict_mode () {\n    [native code]\n}, get ion () {\n    [native code]\n}, set ion () {\n    [native code]\n}, setGCZeal:function setGCZeal() {\n    [native code]\n}, nukeSandbox:function nukeSandbox() {\n    [native code]\n}, isXrayWrapper:function isXrayWrapper() {\n    [native code]\n}, getDOMClassInfo:function getDOMClassInfo() {\n    [native code]\n}})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj17"
+      }
+    },
+    {
+      "name": "DebuggerClient",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function DebuggerClient(aTransport)\n{\n\"use strict\";\n\n  this._transport = aTransport;\n  this._transport.hooks = this;\n  this._threadClients = {};\n  this._tabClients = {};\n  this._consoleClients = {};\n\n  this._pendingRequests = [];\n  this._activeRequests = {};\n  this._eventsEnabled = true;\n\n  this.compat = new ProtocolCompatibility(this, [\n    new SourcesShim(),\n  ]);\n})",
+        "inspectable": false,
+        "functionName": "DebuggerClient",
+        "functionArguments": [
+          "aTransport"
+        ],
+        "actor": "conn0.consoleObj32"
+      }
+    },
+    {
+      "name": "DebuggerTransport",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function DebuggerTransport(aInput, aOutput)\n{\n\"use strict\";\n\n  this._input = aInput;\n  this._output = aOutput;\n\n  this._converter = Cc[\"@mozilla.org/intl/scriptableunicodeconverter\"]\n    .createInstance(Ci.nsIScriptableUnicodeConverter);\n  this._converter.charset = \"UTF-8\";\n\n  this._outgoing = \"\";\n  this._incoming = \"\";\n\n  this.hooks = null;\n})",
+        "inspectable": false,
+        "functionName": "DebuggerTransport",
+        "functionArguments": [
+          "aInput",
+          "aOutput"
+        ],
+        "actor": "conn0.consoleObj31"
+      }
+    },
+    {
+      "name": "DevTools",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function DevTools() {\n\"use strict\";\n\n  this._tools = new Map();     // Map\n  this._toolboxes = new Map(); // Map\n\n  // destroy() is an observer's handler so we need to preserve context.\n  this.destroy = this.destroy.bind(this);\n\n  EventEmitter.decorate(this);\n\n  Services.obs.addObserver(this.destroy, \"quit-application\", false);\n\n  // Register the set of default tools\n  for (let definition of defaultTools) {\n    this.registerTool(definition);\n  }\n})",
+        "inspectable": false,
+        "functionName": "DevTools",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj27"
+      }
+    },
+    {
+      "name": "InstallTrigger",
+      "configurable": true,
+      "enumerable": true,
+      "get": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function installTriggerGetter() {\n\"use strict\";\n\n      // We do this in a getter, so that we create these objects\n      // only on demand (this is a potential concern, since\n      // otherwise we might add one per iframe, and keep them\n      // alive for as long as the tab is alive).\n\n      delete window.wrappedJSObject.InstallTrigger;\n      var installTrigger = createInstallTrigger(window);\n      window.wrappedJSObject.InstallTrigger = installTrigger;\n      return installTrigger;\n    })",
+        "inspectable": false,
+        "functionName": "installTriggerGetter",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj13"
+      },
+      "set": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "LongStringClient",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function LongStringClient(aClient, aGrip) {\n\"use strict\";\n\n  this._grip = aGrip;\n  this._client = aClient;\n}",
+        "inspectable": false,
+        "functionName": "LongStringClient",
+        "functionArguments": [
+          "aClient",
+          "aGrip"
+        ],
+        "actor": "conn0.consoleObj34"
+      }
+    },
+    {
+      "name": "Services",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({get appShell (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get cache (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get contentPrefs (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get cookies (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get droppedLinkHandler (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get eTLD (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get locale (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get perms (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get domStorageManager (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get vc (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get sysinfo (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get clipboard (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get DOMRequest (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get focus (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), prefs:({}), obs:({}), dirsvc:({}), appinfo:({}), telemetry:({}), scriptloader:({}), ww:({}), io:({}), strings:({}), tm:({}), logins:({}), wm:({}), storage:({}), startup:({}), uriFixup:({}), console:({}), urlFormatter:({}), downloads:({}), search:({}), scriptSecurityManager:({}), prompt:({})})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj30"
+      }
+    },
+    {
+      "name": "TargetFactory",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({forTab:(function TF_forTab(tab) {\n\"use strict\";\n\n    let target = targets.get(tab);\n    if (target == null) {\n      target = new TabTarget(tab);\n      targets.set(tab, target);\n    }\n    return target;\n  }), isKnownTab:(function TF_isKnownTab(tab) {\n\"use strict\";\n\n    return targets.has(tab);\n  }), forWindow:(function TF_forWindow(window) {\n\"use strict\";\n\n    let target = targets.get(window);\n    if (target == null) {\n      target = new WindowTarget(window);\n      targets.set(window, target);\n    }\n    return target;\n  }), allTargets:(function TF_allTargets() {\n\"use strict\";\n\n    let windows = [];\n    let wm = Components.classes[\"@mozilla.org/appshell/window-mediator;1\"]\n                       .getService(Components.interfaces.nsIWindowMediator);\n    let en = wm.getXULWindowEnumerator(null);\n    while (en.hasMoreElements()) {\n      windows.push(en.getNext());\n    }\n\n    return windows.map(function(window) {\n      return TargetFactory.forWindow(window);\n    });\n  })})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj24"
+      }
+    },
+    {
+      "name": "Toolbox",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function Toolbox(target, selectedTool, hostType) {\n\"use strict\";\n\n  this._target = target;\n  this._toolPanels = new Map();\n\n  this._toolRegistered = this._toolRegistered.bind(this);\n  this._toolUnregistered = this._toolUnregistered.bind(this);\n  this.destroy = this.destroy.bind(this);\n\n  this._target.on(\"close\", this.destroy);\n\n  if (!hostType) {\n    hostType = Services.prefs.getCharPref(this._prefs.LAST_HOST);\n  }\n  if (!selectedTool) {\n    selectedTool = Services.prefs.getCharPref(this._prefs.LAST_TOOL);\n  }\n  let definitions = gDevTools.getToolDefinitionMap();\n  if (!definitions.get(selectedTool)) {\n    selectedTool = \"webconsole\";\n  }\n  this._defaultToolId = selectedTool;\n\n  this._host = this._createHost(hostType);\n\n  EventEmitter.decorate(this);\n\n  this._refreshHostTitle = this._refreshHostTitle.bind(this);\n  this._target.on(\"navigate\", this._refreshHostTitle);\n  this.on(\"host-changed\", this._refreshHostTitle);\n  this.on(\"select\", this._refreshHostTitle);\n\n  gDevTools.on(\"tool-registered\", this._toolRegistered);\n  gDevTools.on(\"tool-unregistered\", this._toolUnregistered);\n})",
+        "inspectable": true,
+        "functionName": "Toolbox",
+        "functionArguments": [
+          "target",
+          "selectedTool",
+          "hostType"
+        ],
+        "actor": "conn0.consoleObj25"
+      }
+    },
+    {
+      "name": "XPCOMUtils",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({generateQI:(function XPCU_generateQI(interfaces) {\n    /* Note that Ci[Ci.x] == Ci.x for all x */\n    return makeQI([Ci[i].name for each (i in interfaces) if (Ci[i])]);\n  }), generateCI:(function XPCU_generateCI(classInfo)\n  {\n    if (QueryInterface in classInfo)\n      throw Error(\"In generateCI, don't use a component for generating classInfo\");\n    /* Note that Ci[Ci.x] == Ci.x for all x */\n    var _interfaces = [Ci[i] for each (i in classInfo.interfaces) if (Ci[i])];\n    return {\n      getInterfaces: function XPCU_getInterfaces(countRef) {\n        countRef.value = _interfaces.length;\n        return _interfaces;\n      },\n      getHelperForLanguage: function XPCU_getHelperForLanguage(language) null,\n      contractID: classInfo.contractID,\n      classDescription: classInfo.classDescription,\n      classID: classInfo.classID,\n      implementationLanguage: Ci.nsIProgrammingLanguage.JAVASCRIPT,\n      flags: classInfo.flags,\n      QueryInterface: this.generateQI([Ci.nsIClassInfo])\n    };\n  }), generateNSGetFactory:(function XPCU_generateNSGetFactory(componentsArray) {\n    let classes = {};\n    for each (let component in componentsArray) {\n        if (!(component.prototype.classID instanceof Components.ID))\n          throw Error(\"In generateNSGetFactory, classID missing or incorrect for component \" + component);\n\n        classes[component.prototype.classID] = this._getFactory(component);\n    }\n    return function NSGetFactory(cid) {\n      let cidstring = cid.toString();\n      if (cidstring in classes)\n        return classes[cidstring];\n      throw Cr.NS_ERROR_FACTORY_NOT_REGISTERED;\n    }\n  }), defineLazyGetter:(function XPCU_defineLazyGetter(aObject, aName, aLambda)\n  {\n    Object.defineProperty(aObject, aName, {\n      get: function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      },\n      configurable: true,\n      enumerable: true\n    });\n  }), defineLazyServiceGetter:(function XPCU_defineLazyServiceGetter(aObject, aName,\n                                                                 aContract,\n                                                                 aInterfaceName)\n  {\n    this.defineLazyGetter(aObject, aName, function XPCU_serviceLambda() {\n      return Cc[aContract].getService(Ci[aInterfaceName]);\n    });\n  }), defineLazyModuleGetter:(function XPCU_defineLazyModuleGetter(aObject, aName,\n                                                               aResource,\n                                                               aSymbol)\n  {\n    this.defineLazyGetter(aObject, aName, function XPCU_moduleLambda() {\n      var temp = {};\n      Cu.import(aResource, temp);\n      return temp[aSymbol || aName];\n    });\n  }), get categoryManager () {\n    return Components.classes[\"@mozilla.org/categorymanager;1\"]\n           .getService(Ci.nsICategoryManager);\n  }, IterSimpleEnumerator:(function XPCU_IterSimpleEnumerator(e, i)\n  {\n    while (e.hasMoreElements())\n      yield e.getNext().QueryInterface(i);\n  }), IterStringEnumerator:(function XPCU_IterStringEnumerator(e)\n  {\n    while (e.hasMore())\n      yield e.getNext();\n  }), _getFactory:(function XPCOMUtils__getFactory(component) {\n    var factory = component.prototype._xpcom_factory;\n    if (!factory) {\n      factory = {\n        createInstance: function(outer, iid) {\n          if (outer)\n            throw Cr.NS_ERROR_NO_AGGREGATION;\n          return (new component()).QueryInterface(iid);\n        }\n      }\n    }\n    return factory;\n  }), importRelative:(function XPCOMUtils__importRelative(that, path) {\n    if (!(\"__URI__\" in that))\n      throw Error(\"importRelative may only be used from a JSM, and its first argument \"+\n                  \"must be that JSM's global object (hint: use this)\");\n    let uri = that.__URI__;\n    let i = uri.lastIndexOf(\"/\");\n    Components.utils.import(uri.substring(0, i+1) + path, that);\n  }), generateSingletonFactory:(function XPCOMUtils_generateSingletonFactory(aServiceConstructor) {\n    return {\n      _instance: null,\n      createInstance: function XPCU_SF_createInstance(aOuter, aIID) {\n        if (aOuter !== null) {\n          throw Cr.NS_ERROR_NO_AGGREGATION;\n        }\n        if (this._instance === null) {\n          this._instance = new aServiceConstructor();\n        }\n        return this._instance.QueryInterface(aIID);\n      },\n      lockFactory: function XPCU_SF_lockFactory(aDoLock) {\n        throw Cr.NS_ERROR_NOT_IMPLEMENTED;\n      },\n      QueryInterface: XPCOMUtils.generateQI([Ci.nsIFactory])\n    };\n  })})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj29"
+      }
+    },
+    {
+      "name": "addEventListener",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function addEventListener() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "addEventListener",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj42"
+      }
+    },
+    {
+      "name": "alert",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function alert() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "alert",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj66"
+      }
+    },
+    {
+      "name": "applicationCache",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "OfflineResourceList",
+        "displayString": "[object OfflineResourceList]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj65"
+      }
+    },
+    {
+      "name": "atob",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function atob() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "atob",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj72"
+      }
+    },
+    {
+      "name": "back",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function back() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "back",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj84"
+      }
+    },
+    {
+      "name": "blur",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function blur() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "blur",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj63"
+      }
+    },
+    {
+      "name": "btoa",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function btoa() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "btoa",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj73"
+      }
+    },
+    {
+      "name": "buildLink",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function buildLink(tab, parent, selected) {\n\"use strict\";\n\n  let a = document.createElement(\"a\");\n  a.onclick = function() {\n    openToolbox(tab);\n  }\n\n  a.textContent = tab.title;\n  a.title = tab.url;\n  if (!a.textContent) {\n    a.textContent = tab.url;\n  }\n  a.href = \"#\";\n\n  if (selected) {\n    a.classList.add(\"selected\");\n  }\n\n  parent.appendChild(a);\n}",
+        "inspectable": false,
+        "functionName": "buildLink",
+        "functionArguments": [
+          "tab",
+          "parent",
+          "selected"
+        ],
+        "actor": "conn0.consoleObj20"
+      }
+    },
+    {
+      "name": "captureEvents",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function captureEvents() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "captureEvents",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj101"
+      }
+    },
+    {
+      "name": "clearInterval",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function clearInterval() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "clearInterval",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj99"
+      }
+    },
+    {
+      "name": "clearTimeout",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function clearTimeout() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "clearTimeout",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj98"
+      }
+    },
+    {
+      "name": "close",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function close() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "close",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj60"
+      }
+    },
+    {
+      "name": "closed",
+      "configurable": true,
+      "enumerable": true,
+      "value": false
+    },
+    {
+      "name": "confirm",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function confirm() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "confirm",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj67"
+      }
+    },
+    {
+      "name": "console",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({log:function log() {\n    [native code]\n}, info:function info() {\n    [native code]\n}, warn:function warn() {\n    [native code]\n}, error:function error() {\n    [native code]\n}, debug:function debug() {\n    [native code]\n}, trace:function trace() {\n    [native code]\n}, dir:function dir() {\n    [native code]\n}, group:function group() {\n    [native code]\n}, groupCollapsed:function groupCollapsed() {\n    [native code]\n}, groupEnd:function groupEnd() {\n    [native code]\n}, time:function time() {\n    [native code]\n}, timeEnd:function timeEnd() {\n    [native code]\n}, profile:function profile() {\n    [native code]\n}, profileEnd:function profileEnd() {\n    [native code]\n}, __noSuchMethod__:function __noSuchMethod__() {\n    [native code]\n}})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj36"
+      }
+    },
+    {
+      "name": "constructor",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": false,
+        "actor": "conn0.consoleObj37"
+      }
+    },
+    {
+      "name": "content",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj81"
+      }
+    },
+    {
+      "name": "controllers",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "XULControllers",
+        "displayString": "[object XULControllers]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj83"
+      }
+    },
+    {
+      "name": "crypto",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "Crypto",
+        "displayString": "[object Crypto]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj82"
+      }
+    },
+    {
+      "name": "debuggerSocketConnect",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function debuggerSocketConnect(aHost, aPort)\n{\n\"use strict\";\n\n  let s = socketTransportService.createTransport(null, 0, aHost, aPort, null);\n  let transport = new DebuggerTransport(s.openInputStream(0, 0, 0),\n                                        s.openOutputStream(0, 0, 0));\n  return transport;\n})",
+        "inspectable": false,
+        "functionName": "debuggerSocketConnect",
+        "functionArguments": [
+          "aHost",
+          "aPort"
+        ],
+        "actor": "conn0.consoleObj33"
+      }
+    },
+    {
+      "name": "defaultStatus",
+      "configurable": true,
+      "enumerable": true,
+      "value": ""
+    },
+    {
+      "name": "devicePixelRatio",
+      "configurable": true,
+      "enumerable": true,
+      "value": 1
+    },
+    {
+      "name": "disableExternalCapture",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function disableExternalCapture() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "disableExternalCapture",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj105"
+      }
+    },
+    {
+      "name": "dispatchEvent",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function dispatchEvent() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "dispatchEvent",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj44"
+      }
+    },
+    {
+      "name": "document",
+      "configurable": true,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "HTMLDocument",
+        "displayString": "[object HTMLDocument]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj12"
+      }
+    },
+    {
+      "name": "dump",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function dump() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "dump",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj45"
+      }
+    },
+    {
+      "name": "enableExternalCapture",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function enableExternalCapture() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "enableExternalCapture",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj104"
+      }
+    },
+    {
+      "name": "external",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "[xpconnect wrapped (nsISupports, nsISidebar, nsISidebarExternal)]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj38"
+      }
+    },
+    {
+      "name": "find",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function find() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "find",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj92"
+      }
+    },
+    {
+      "name": "focus",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function focus() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "focus",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj62"
+      }
+    },
+    {
+      "name": "forward",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function forward() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "forward",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj85"
+      }
+    },
+    {
+      "name": "frameElement",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "frames",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj52"
+      }
+    },
+    {
+      "name": "fullScreen",
+      "configurable": true,
+      "enumerable": true,
+      "value": false
+    },
+    {
+      "name": "gClient",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "gConnectionTimeout",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "gDevTools",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({_tools:{}, _toolboxes:{}, destroy:function () {\n    [native code]\n}, on:function EventEmitter_on() {\n    [native code]\n}, off:function EventEmitter_off() {\n    [native code]\n}, once:function EventEmitter_once() {\n    [native code]\n}, emit:function EventEmitter_emit() {\n    [native code]\n}})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj26"
+      }
+    },
+    {
+      "name": "gDevToolsBrowser",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({_trackedBrowserWindows:{}, toggleToolboxCommand:(function (gBrowser) {\n\"use strict\";\n\n    let target = TargetFactory.forTab(gBrowser.selectedTab);\n    let toolbox = gDevTools.getToolbox(target);\n\n    toolbox ? toolbox.destroy() : gDevTools.showToolbox(target);\n  }), selectToolCommand:(function (gBrowser, toolId) {\n\"use strict\";\n\n    let target = TargetFactory.forTab(gBrowser.selectedTab);\n    let toolbox = gDevTools.getToolbox(target);\n\n    if (toolbox && toolbox.currentToolId == toolId) {\n      if (toolbox.hostType == Toolbox.HostType.WINDOW) {\n        toolbox.raise();\n      } else {\n        toolbox.destroy();\n      }\n    } else {\n      gDevTools.showToolbox(target, toolId);\n    }\n  }), openConnectScreen:(function (gBrowser) {\n\"use strict\";\n\n    gBrowser.selectedTab = gBrowser.addTab(\"chrome://browser/content/devtools/connect.xhtml\");\n  }), registerBrowserWindow:(function DT_registerBrowserWindow(win) {\n\"use strict\";\n\n    gDevToolsBrowser._trackedBrowserWindows.add(win);\n    gDevToolsBrowser._addAllToolsToMenu(win.document);\n\n    let tabContainer = win.document.getElementById(\"tabbrowser-tabs\")\n    tabContainer.addEventListener(\"TabSelect\",\n                                  gDevToolsBrowser._updateMenuCheckbox, false);\n  }), attachKeybindingsToBrowser:(function DT_attachKeybindingsToBrowser(doc, keys) {\n\"use strict\";\n\n    let devtoolsKeyset = doc.getElementById(\"devtoolsKeyset\");\n    if (!devtoolsKeyset) {\n      devtoolsKeyset = doc.createElement(\"keyset\");\n      devtoolsKeyset.setAttribute(\"id\", \"devtoolsKeyset\");\n    }\n    devtoolsKeyset.appendChild(keys);\n    let mainKeyset = doc.getElementById(\"mainKeyset\");\n    mainKeyset.parentNode.insertBefore(devtoolsKeyset, mainKeyset);\n  }), _addToolToWindows:(function DT_addToolToWindows(toolDefinition) {\n\"use strict\";\n\n    // We need to insert the new tool in the right place, which means knowing\n    // the tool that comes before the tool that we're trying to add\n    let allDefs = gDevTools.getToolDefinitionArray();\n    let prevDef;\n    for (let def of allDefs) {\n      if (def === toolDefinition) {\n        break;\n      }\n      prevDef = def;\n    }\n\n    for (let win of gDevToolsBrowser._trackedBrowserWindows) {\n      let doc = win.document;\n      let elements = gDevToolsBrowser._createToolMenuElements(toolDefinition, doc);\n\n      doc.getElementById(\"mainCommandSet\").appendChild(elements.cmd);\n\n      if (elements.key) {\n        this.attachKeybindingsToBrowser(doc, elements.key);\n      }\n\n      doc.getElementById(\"mainBroadcasterSet\").appendChild(elements.bc);\n\n      let amp = doc.getElementById(\"appmenu_webDeveloper_popup\");\n      if (amp) {\n        let ref = (prevDef != null) ?\n            doc.getElementById(\"appmenuitem_\" + prevDef.id).nextSibling :\n            doc.getElementById(\"appmenu_devtools_separator\");\n\n        amp.insertBefore(elements.appmenuitem, ref);\n      }\n\n      let mp = doc.getElementById(\"menuWebDeveloperPopup\");\n      let ref = (prevDef != null) ?\n          doc.getElementById(\"menuitem_\" + prevDef.id).nextSibling :\n          doc.getElementById(\"menu_devtools_separator\");\n      mp.insertBefore(elements.menuitem, ref);\n    }\n  }), _addAllToolsToMenu:(function DT_addAllToolsToMenu(doc) {\n\"use strict\";\n\n    let fragCommands = doc.createDocumentFragment();\n    let fragKeys = doc.createDocumentFragment();\n    let fragBroadcasters = doc.createDocumentFragment();\n    let fragAppMenuItems = doc.createDocumentFragment();\n    let fragMenuItems = doc.createDocumentFragment();\n\n    for (let toolDefinition of gDevTools.getToolDefinitionArray()) {\n      let elements = gDevToolsBrowser._createToolMenuElements(toolDefinition, doc);\n\n      if (!elements) {\n        return;\n      }\n\n      fragCommands.appendChild(elements.cmd);\n      if (elements.key) {\n        fragKeys.appendChild(elements.key);\n      }\n      fragBroadcasters.appendChild(elements.bc);\n      fragAppMenuItems.appendChild(elements.appmenuitem);\n      fragMenuItems.appendChild(elements.menuitem);\n    }\n\n    let mcs = doc.getElementById(\"mainCommandSet\");\n    mcs.appendChild(fragCommands);\n\n    this.attachKeybindingsToBrowser(doc, fragKeys);\n\n    let mbs = doc.getElementById(\"mainBroadcasterSet\");\n    mbs.appendChild(fragBroadcasters);\n\n    let amp = doc.getElementById(\"appmenu_webDeveloper_popup\");\n    if (amp) {\n      let amps = doc.getElementById(\"appmenu_devtools_separator\");\n      amp.insertBefore(fragAppMenuItems, amps);\n    }\n\n    let mp = doc.getElementById(\"menuWebDeveloperPopup\");\n    let mps = doc.getElementById(\"menu_devtools_separator\");\n    mp.insertBefore(fragMenuItems, mps);\n  }), _createToolMenuElements:(function DT_createToolMenuElements(toolDefinition, doc) {\n\"use strict\";\n\n    let id = toolDefinition.id;\n\n    // Prevent multiple entries for the same tool.\n    if (doc.getElementById(\"Tools:\" + id)) {\n      return;\n    }\n\n    let cmd = doc.createElement(\"command\");\n    cmd.id = \"Tools:\" + id;\n    cmd.setAttribute(\"oncommand\",\n        'gDevToolsBrowser.selectToolCommand(gBrowser, \"' + id + '\");');\n\n    let key = null;\n    if (toolDefinition.key) {\n      key = doc.createElement(\"key\");\n      key.id = \"key_\" + id;\n\n      if (toolDefinition.key.startsWith(\"VK_\")) {\n        key.setAttribute(\"keycode\", toolDefinition.key);\n      } else {\n        key.setAttribute(\"key\", toolDefinition.key);\n      }\n\n      key.setAttribute(\"command\", cmd.id);\n      key.setAttribute(\"modifiers\", toolDefinition.modifiers);\n    }\n\n    let bc = doc.createElement(\"broadcaster\");\n    bc.id = \"devtoolsMenuBroadcaster_\" + id;\n    bc.setAttribute(\"label\", toolDefinition.label);\n    bc.setAttribute(\"command\", cmd.id);\n\n    if (key) {\n      bc.setAttribute(\"key\", \"key_\" + id);\n    }\n\n    let appmenuitem = doc.createElement(\"menuitem\");\n    appmenuitem.id = \"appmenuitem_\" + id;\n    appmenuitem.setAttribute(\"observes\", \"devtoolsMenuBroadcaster_\" + id);\n\n    let menuitem = doc.createElement(\"menuitem\");\n    menuitem.id = \"menuitem_\" + id;\n    menuitem.setAttribute(\"observes\", \"devtoolsMenuBroadcaster_\" + id);\n\n    if (toolDefinition.accesskey) {\n      menuitem.setAttribute(\"accesskey\", toolDefinition.accesskey);\n    }\n\n    return {\n      cmd: cmd,\n      key: key,\n      bc: bc,\n      appmenuitem: appmenuitem,\n      menuitem: menuitem\n    };\n  }), _updateMenuCheckbox:(function DT_updateMenuCheckbox() {\n\"use strict\";\n\n    for (let win of gDevToolsBrowser._trackedBrowserWindows) {\n\n      let hasToolbox = false;\n      if (TargetFactory.isKnownTab(win.gBrowser.selectedTab)) {\n        let target = TargetFactory.forTab(win.gBrowser.selectedTab);\n        if (gDevTools._toolboxes.has(target)) {\n          hasToolbox = true;\n        }\n      }\n\n      let broadcaster = win.document.getElementById(\"devtoolsMenuBroadcaster_DevToolbox\");\n      if (hasToolbox) {\n        broadcaster.setAttribute(\"checked\", \"true\");\n      } else {\n        broadcaster.removeAttribute(\"checked\");\n      }\n    }\n  }), _removeToolFromWindows:(function DT_removeToolFromWindows(toolId) {\n\"use strict\";\n\n    for (let win of gDevToolsBrowser._trackedBrowserWindows) {\n      gDevToolsBrowser._removeToolFromMenu(toolId, win.document);\n    }\n  }), _removeToolFromMenu:(function DT_removeToolFromMenu(toolId, doc) {\n\"use strict\";\n\n    let command = doc.getElementById(\"Tools:\" + toolId);\n    if (command) {\n      command.parentNode.removeChild(command);\n    }\n\n    let key = doc.getElementById(\"key_\" + toolId);\n    if (key) {\n      key.parentNode.removeChild(key);\n    }\n\n    let bc = doc.getElementById(\"devtoolsMenuBroadcaster_\" + toolId);\n    if (bc) {\n      bc.parentNode.removeChild(bc);\n    }\n\n    let appmenuitem = doc.getElementById(\"appmenuitem_\" + toolId);\n    if (appmenuitem) {\n      appmenuitem.parentNode.removeChild(appmenuitem);\n    }\n\n    let menuitem = doc.getElementById(\"menuitem_\" + toolId);\n    if (menuitem) {\n      menuitem.parentNode.removeChild(menuitem);\n    }\n  }), forgetBrowserWindow:(function DT_forgetBrowserWindow(win) {\n\"use strict\";\n\n    gDevToolsBrowser._trackedBrowserWindows.delete(win);\n\n    // Destroy toolboxes for closed window\n    for (let [target, toolbox] of gDevTools._toolboxes) {\n      if (toolbox.frame && toolbox.frame.ownerDocument.defaultView == win) {\n        toolbox.destroy();\n      }\n    }\n\n    let tabContainer = win.document.getElementById(\"tabbrowser-tabs\")\n    tabContainer.removeEventListener(\"TabSelect\",\n                                     gDevToolsBrowser._updateMenuCheckbox, false);\n  }), destroy:(function () {\n\"use strict\";\n\n    Services.obs.removeObserver(gDevToolsBrowser.destroy, \"quit-application\");\n  })})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj28"
+      }
+    },
+    {
+      "name": "getComputedStyle",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function getComputedStyle() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "getComputedStyle",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj50"
+      }
+    },
+    {
+      "name": "getDefaultComputedStyle",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function getDefaultComputedStyle() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "getDefaultComputedStyle",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj78"
+      }
+    },
+    {
+      "name": "getInterface",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function getInterface() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "getInterface",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj15"
+      }
+    },
+    {
+      "name": "getSelection",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function getSelection() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "getSelection",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj48"
+      }
+    },
+    {
+      "name": "handleConnectionTimeout",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function handleConnectionTimeout() {\n\"use strict\";\n\n  showError(\"timeout\");\n}",
+        "inspectable": false,
+        "functionName": "handleConnectionTimeout",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj22"
+      }
+    },
+    {
+      "name": "history",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "History",
+        "displayString": "[object History]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj53"
+      }
+    },
+    {
+      "name": "home",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function home() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "home",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj86"
+      }
+    },
+    {
+      "name": "indexedDB",
+      "configurable": true,
+      "enumerable": true,
+      "get": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function indexedDB() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "indexedDB",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj108"
+      },
+      "set": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "innerHeight",
+      "configurable": true,
+      "enumerable": true,
+      "value": 1058
+    },
+    {
+      "name": "innerWidth",
+      "configurable": true,
+      "enumerable": true,
+      "value": 960
+    },
+    {
+      "name": "l10n",
+      "configurable": true,
+      "enumerable": true,
+      "get": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      })",
+        "inspectable": false,
+        "functionArguments": [],
+        "actor": "conn0.consoleObj35"
+      },
+      "set": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "length",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "localStorage",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true
+    },
+    {
+      "name": "location",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Location",
+        "displayString": "chrome://browser/content/devtools/connect.xhtml#",
+        "inspectable": true,
+        "actor": "conn0.consoleObj14"
+      }
+    },
+    {
+      "name": "locationbar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj54"
+      }
+    },
+    {
+      "name": "matchMedia",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function matchMedia() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "matchMedia",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj74"
+      }
+    },
+    {
+      "name": "menubar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj55"
+      }
+    },
+    {
+      "name": "moveBy",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function moveBy() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "moveBy",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj88"
+      }
+    },
+    {
+      "name": "moveTo",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function moveTo() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "moveTo",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj87"
+      }
+    },
+    {
+      "name": "mozAnimationStartTime",
+      "configurable": true,
+      "enumerable": true,
+      "value": 1380690329058
+    },
+    {
+      "name": "mozCancelAnimationFrame",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function mozCancelAnimationFrame() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "mozCancelAnimationFrame",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj94"
+      }
+    },
+    {
+      "name": "mozCancelRequestAnimationFrame",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function mozCancelRequestAnimationFrame() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "mozCancelRequestAnimationFrame",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj95"
+      }
+    },
+    {
+      "name": "mozIndexedDB",
+      "configurable": true,
+      "enumerable": true,
+      "get": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function mozIndexedDB() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "mozIndexedDB",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj109"
+      },
+      "set": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "mozInnerScreenX",
+      "configurable": true,
+      "enumerable": true,
+      "value": 960
+    },
+    {
+      "name": "mozInnerScreenY",
+      "configurable": true,
+      "enumerable": true,
+      "value": 104
+    },
+    {
+      "name": "mozPaintCount",
+      "configurable": true,
+      "enumerable": true,
+      "value": 19
+    },
+    {
+      "name": "mozRequestAnimationFrame",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function mozRequestAnimationFrame() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "mozRequestAnimationFrame",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj93"
+      }
+    },
+    {
+      "name": "name",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": ""
+    },
+    {
+      "name": "navigator",
+      "configurable": false,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "Navigator",
+        "displayString": "[object Navigator]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj64"
+      }
+    },
+    {
+      "name": "onConnectionReady",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function onConnectionReady(aType, aTraits) {\n\"use strict\";\n\n  clearTimeout(gConnectionTimeout);\n  gClient.listTabs(function(aResponse) {\n    document.body.classList.remove(\"connecting\");\n    document.body.classList.add(\"actors-mode\");\n\n    let parent = document.getElementById(\"tabActors\");\n\n    // Add Global Process debugging...\n    let globals = JSON.parse(JSON.stringify(aResponse));\n    delete globals.tabs;\n    delete globals.selected;\n    // ...only if there are appropriate actors (a 'from' property will always\n    // be there).\n\n    // Add one entry for each open tab.\n    for (let i = 0; i < aResponse.tabs.length; i++) {\n      buildLink(aResponse.tabs[i], parent, i == aResponse.selected);\n    }\n\n    let gParent = document.getElementById(\"globalActors\");\n\n    // Build the Remote Process button\n    if (Object.keys(globals).length > 1) {\n      let a = document.createElement(\"a\");\n      a.onclick = function() {\n        openToolbox(globals, true);\n\n      }\n      a.title = a.textContent = window.l10n.GetStringFromName(\"mainProcess\");\n      a.className = \"remote-process\";\n      a.href = \"#\";\n      gParent.appendChild(a);\n    }\n    // Move the selected tab on top\n    let selectedLink = parent.querySelector(\"a.selected\");\n    if (selectedLink) {\n      parent.insertBefore(selectedLink, parent.firstChild);\n    }\n\n    // Ensure the first link is focused\n    let firstLink = parent.querySelector(\"a:first-of-type\");\n    if (firstLink) {\n      firstLink.focus();\n    }\n\n  });\n}",
+        "inspectable": false,
+        "functionName": "onConnectionReady",
+        "functionArguments": [
+          "aType",
+          "aTraits"
+        ],
+        "actor": "conn0.consoleObj19"
+      }
+    },
+    {
+      "name": "onabort",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onafterprint",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onafterscriptexecute",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onbeforeprint",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onbeforescriptexecute",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onbeforeunload",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onblur",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncanplay",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncanplaythrough",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onclick",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncontextmenu",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncopy",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncut",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondblclick",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondevicelight",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondevicemotion",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondeviceorientation",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondeviceproximity",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondrag",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragend",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragenter",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragleave",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragover",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragstart",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondrop",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondurationchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onemptied",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onended",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onerror",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onfocus",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onhashchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oninput",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oninvalid",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onkeydown",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onkeypress",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onkeyup",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onload",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onloadeddata",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onloadedmetadata",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onloadstart",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmessage",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmousedown",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseenter",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseleave",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmousemove",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseout",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseover",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseup",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmozfullscreenchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmozfullscreenerror",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmozpointerlockchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmozpointerlockerror",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onoffline",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ononline",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpagehide",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpageshow",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpaste",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpause",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onplay",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onplaying",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpopstate",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onprogress",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onratechange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onreset",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onresize",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onscroll",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onseeked",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onseeking",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onselect",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onshow",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onstalled",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onsubmit",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onsuspend",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ontimeupdate",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onunload",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onuserproximity",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onvolumechange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onwaiting",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onwheel",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "open",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function open() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "open",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj106"
+      }
+    },
+    {
+      "name": "openDialog",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function openDialog() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "openDialog",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj107"
+      }
+    },
+    {
+      "name": "openToolbox",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function openToolbox(form, chrome=false) {\n\"use strict\";\n\n  let options = {\n    form: form,\n    client: gClient,\n    chrome: chrome\n  };\n  let target = TargetFactory.forTab(options);\n  target.makeRemote(options).then(function() {\n    gDevTools.showToolbox(target, \"webconsole\", Toolbox.HostType.WINDOW);\n    window.close();\n  });\n}",
+        "inspectable": false,
+        "functionName": "openToolbox",
+        "functionArguments": [
+          "form",
+          "chrome=false"
+        ],
+        "actor": "conn0.consoleObj23"
+      }
+    },
+    {
+      "name": "opener",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "outerHeight",
+      "configurable": true,
+      "enumerable": true,
+      "value": 1174
+    },
+    {
+      "name": "outerWidth",
+      "configurable": true,
+      "enumerable": true,
+      "value": 960
+    },
+    {
+      "name": "pageXOffset",
+      "configurable": true
+[54] to client:
+80332:{
+  "from": "conn0.consoleObj10",
+  "properties": [
+    {
+      "name": "Application",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "[xpconnect wrapped (nsISupports, fuelIApplication, extIApplication, nsIObserver)]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj39"
+      }
+    },
+    {
+      "name": "Cu",
+      "configurable": false,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "nsXPCComponents_Utils",
+        "displayString": "({QueryInterface:function QueryInterface() {\n    [native code]\n}, reportError:function reportError() {\n    [native code]\n}, lookupMethod:function lookupMethod() {\n    [native code]\n}, get Sandbox () {\n    [native code]\n}, evalInSandbox:function evalInSandbox() {\n    [native code]\n}, import:function import() {\n    [native code]\n}, unload:function unload() {\n    [native code]\n}, getWeakReference:function getWeakReference() {\n    [native code]\n}, forceGC:function forceGC() {\n    [native code]\n}, forceCC:function forceCC() {\n    [native code]\n}, forceShrinkingGC:function forceShrinkingGC() {\n    [native code]\n}, schedulePreciseGC:function schedulePreciseGC() {\n    [native code]\n}, schedulePreciseShrinkingGC:function schedulePreciseShrinkingGC() {\n    [native code]\n}, nondeterministicGetWeakMapKeys:function nondeterministicGetWeakMapKeys() {\n    [native code]\n}, getJSTestingFunctions:function getJSTestingFunctions() {\n    [native code]\n}, getGlobalForObject:function getGlobalForObject() {\n    [native code]\n}, createObjectIn:function createObjectIn() {\n    [native code]\n}, createArrayIn:function createArrayIn() {\n    [native code]\n}, createDateIn:function createDateIn() {\n    [native code]\n}, makeObjectPropsNormal:function makeObjectPropsNormal() {\n    [native code]\n}, isDeadWrapper:function isDeadWrapper() {\n    [native code]\n}, recomputeWrappers:function recomputeWrappers() {\n    [native code]\n}, setWantXrays:function setWantXrays() {\n    [native code]\n}, getComponentsForScope:function getComponentsForScope() {\n    [native code]\n}, dispatch:function dispatch() {\n    [native code]\n}, get strict () {\n    [native code]\n}, set strict () {\n    [native code]\n}, get werror () {\n    [native code]\n}, set werror () {\n    [native code]\n}, get methodjit () {\n    [native code]\n}, set methodjit () {\n    [native code]\n}, get methodjit_always () {\n    [native code]\n}, set methodjit_always () {\n    [native code]\n}, get strict_mode () {\n    [native code]\n}, set strict_mode () {\n    [native code]\n}, get ion () {\n    [native code]\n}, set ion () {\n    [native code]\n}, setGCZeal:function setGCZeal() {\n    [native code]\n}, nukeSandbox:function nukeSandbox() {\n    [native code]\n}, isXrayWrapper:function isXrayWrapper() {\n    [native code]\n}, getDOMClassInfo:function getDOMClassInfo() {\n    [native code]\n}})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj17"
+      }
+    },
+    {
+      "name": "DebuggerClient",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function DebuggerClient(aTransport)\n{\n\"use strict\";\n\n  this._transport = aTransport;\n  this._transport.hooks = this;\n  this._threadClients = {};\n  this._tabClients = {};\n  this._consoleClients = {};\n\n  this._pendingRequests = [];\n  this._activeRequests = {};\n  this._eventsEnabled = true;\n\n  this.compat = new ProtocolCompatibility(this, [\n    new SourcesShim(),\n  ]);\n})",
+        "inspectable": false,
+        "functionName": "DebuggerClient",
+        "functionArguments": [
+          "aTransport"
+        ],
+        "actor": "conn0.consoleObj32"
+      }
+    },
+    {
+      "name": "DebuggerTransport",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function DebuggerTransport(aInput, aOutput)\n{\n\"use strict\";\n\n  this._input = aInput;\n  this._output = aOutput;\n\n  this._converter = Cc[\"@mozilla.org/intl/scriptableunicodeconverter\"]\n    .createInstance(Ci.nsIScriptableUnicodeConverter);\n  this._converter.charset = \"UTF-8\";\n\n  this._outgoing = \"\";\n  this._incoming = \"\";\n\n  this.hooks = null;\n})",
+        "inspectable": false,
+        "functionName": "DebuggerTransport",
+        "functionArguments": [
+          "aInput",
+          "aOutput"
+        ],
+        "actor": "conn0.consoleObj31"
+      }
+    },
+    {
+      "name": "DevTools",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function DevTools() {\n\"use strict\";\n\n  this._tools = new Map();     // Map\n  this._toolboxes = new Map(); // Map\n\n  // destroy() is an observer's handler so we need to preserve context.\n  this.destroy = this.destroy.bind(this);\n\n  EventEmitter.decorate(this);\n\n  Services.obs.addObserver(this.destroy, \"quit-application\", false);\n\n  // Register the set of default tools\n  for (let definition of defaultTools) {\n    this.registerTool(definition);\n  }\n})",
+        "inspectable": false,
+        "functionName": "DevTools",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj27"
+      }
+    },
+    {
+      "name": "InstallTrigger",
+      "configurable": true,
+      "enumerable": true,
+      "get": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function installTriggerGetter() {\n\"use strict\";\n\n      // We do this in a getter, so that we create these objects\n      // only on demand (this is a potential concern, since\n      // otherwise we might add one per iframe, and keep them\n      // alive for as long as the tab is alive).\n\n      delete window.wrappedJSObject.InstallTrigger;\n      var installTrigger = createInstallTrigger(window);\n      window.wrappedJSObject.InstallTrigger = installTrigger;\n      return installTrigger;\n    })",
+        "inspectable": false,
+        "functionName": "installTriggerGetter",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj13"
+      },
+      "set": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "LongStringClient",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function LongStringClient(aClient, aGrip) {\n\"use strict\";\n\n  this._grip = aGrip;\n  this._client = aClient;\n}",
+        "inspectable": false,
+        "functionName": "LongStringClient",
+        "functionArguments": [
+          "aClient",
+          "aGrip"
+        ],
+        "actor": "conn0.consoleObj34"
+      }
+    },
+    {
+      "name": "Services",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({get appShell (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get cache (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get contentPrefs (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get cookies (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get droppedLinkHandler (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get eTLD (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get locale (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get perms (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get domStorageManager (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get vc (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get sysinfo (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get clipboard (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get DOMRequest (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), get focus (function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      }), prefs:({}), obs:({}), dirsvc:({}), appinfo:({}), telemetry:({}), scriptloader:({}), ww:({}), io:({}), strings:({}), tm:({}), logins:({}), wm:({}), storage:({}), startup:({}), uriFixup:({}), console:({}), urlFormatter:({}), downloads:({}), search:({}), scriptSecurityManager:({}), prompt:({})})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj30"
+      }
+    },
+    {
+      "name": "TargetFactory",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({forTab:(function TF_forTab(tab) {\n\"use strict\";\n\n    let target = targets.get(tab);\n    if (target == null) {\n      target = new TabTarget(tab);\n      targets.set(tab, target);\n    }\n    return target;\n  }), isKnownTab:(function TF_isKnownTab(tab) {\n\"use strict\";\n\n    return targets.has(tab);\n  }), forWindow:(function TF_forWindow(window) {\n\"use strict\";\n\n    let target = targets.get(window);\n    if (target == null) {\n      target = new WindowTarget(window);\n      targets.set(window, target);\n    }\n    return target;\n  }), allTargets:(function TF_allTargets() {\n\"use strict\";\n\n    let windows = [];\n    let wm = Components.classes[\"@mozilla.org/appshell/window-mediator;1\"]\n                       .getService(Components.interfaces.nsIWindowMediator);\n    let en = wm.getXULWindowEnumerator(null);\n    while (en.hasMoreElements()) {\n      windows.push(en.getNext());\n    }\n\n    return windows.map(function(window) {\n      return TargetFactory.forWindow(window);\n    });\n  })})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj24"
+      }
+    },
+    {
+      "name": "Toolbox",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function Toolbox(target, selectedTool, hostType) {\n\"use strict\";\n\n  this._target = target;\n  this._toolPanels = new Map();\n\n  this._toolRegistered = this._toolRegistered.bind(this);\n  this._toolUnregistered = this._toolUnregistered.bind(this);\n  this.destroy = this.destroy.bind(this);\n\n  this._target.on(\"close\", this.destroy);\n\n  if (!hostType) {\n    hostType = Services.prefs.getCharPref(this._prefs.LAST_HOST);\n  }\n  if (!selectedTool) {\n    selectedTool = Services.prefs.getCharPref(this._prefs.LAST_TOOL);\n  }\n  let definitions = gDevTools.getToolDefinitionMap();\n  if (!definitions.get(selectedTool)) {\n    selectedTool = \"webconsole\";\n  }\n  this._defaultToolId = selectedTool;\n\n  this._host = this._createHost(hostType);\n\n  EventEmitter.decorate(this);\n\n  this._refreshHostTitle = this._refreshHostTitle.bind(this);\n  this._target.on(\"navigate\", this._refreshHostTitle);\n  this.on(\"host-changed\", this._refreshHostTitle);\n  this.on(\"select\", this._refreshHostTitle);\n\n  gDevTools.on(\"tool-registered\", this._toolRegistered);\n  gDevTools.on(\"tool-unregistered\", this._toolUnregistered);\n})",
+        "inspectable": true,
+        "functionName": "Toolbox",
+        "functionArguments": [
+          "target",
+          "selectedTool",
+          "hostType"
+        ],
+        "actor": "conn0.consoleObj25"
+      }
+    },
+    {
+      "name": "XPCOMUtils",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({generateQI:(function XPCU_generateQI(interfaces) {\n    /* Note that Ci[Ci.x] == Ci.x for all x */\n    return makeQI([Ci[i].name for each (i in interfaces) if (Ci[i])]);\n  }), generateCI:(function XPCU_generateCI(classInfo)\n  {\n    if (QueryInterface in classInfo)\n      throw Error(\"In generateCI, don't use a component for generating classInfo\");\n    /* Note that Ci[Ci.x] == Ci.x for all x */\n    var _interfaces = [Ci[i] for each (i in classInfo.interfaces) if (Ci[i])];\n    return {\n      getInterfaces: function XPCU_getInterfaces(countRef) {\n        countRef.value = _interfaces.length;\n        return _interfaces;\n      },\n      getHelperForLanguage: function XPCU_getHelperForLanguage(language) null,\n      contractID: classInfo.contractID,\n      classDescription: classInfo.classDescription,\n      classID: classInfo.classID,\n      implementationLanguage: Ci.nsIProgrammingLanguage.JAVASCRIPT,\n      flags: classInfo.flags,\n      QueryInterface: this.generateQI([Ci.nsIClassInfo])\n    };\n  }), generateNSGetFactory:(function XPCU_generateNSGetFactory(componentsArray) {\n    let classes = {};\n    for each (let component in componentsArray) {\n        if (!(component.prototype.classID instanceof Components.ID))\n          throw Error(\"In generateNSGetFactory, classID missing or incorrect for component \" + component);\n\n        classes[component.prototype.classID] = this._getFactory(component);\n    }\n    return function NSGetFactory(cid) {\n      let cidstring = cid.toString();\n      if (cidstring in classes)\n        return classes[cidstring];\n      throw Cr.NS_ERROR_FACTORY_NOT_REGISTERED;\n    }\n  }), defineLazyGetter:(function XPCU_defineLazyGetter(aObject, aName, aLambda)\n  {\n    Object.defineProperty(aObject, aName, {\n      get: function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      },\n      configurable: true,\n      enumerable: true\n    });\n  }), defineLazyServiceGetter:(function XPCU_defineLazyServiceGetter(aObject, aName,\n                                                                 aContract,\n                                                                 aInterfaceName)\n  {\n    this.defineLazyGetter(aObject, aName, function XPCU_serviceLambda() {\n      return Cc[aContract].getService(Ci[aInterfaceName]);\n    });\n  }), defineLazyModuleGetter:(function XPCU_defineLazyModuleGetter(aObject, aName,\n                                                               aResource,\n                                                               aSymbol)\n  {\n    this.defineLazyGetter(aObject, aName, function XPCU_moduleLambda() {\n      var temp = {};\n      Cu.import(aResource, temp);\n      return temp[aSymbol || aName];\n    });\n  }), get categoryManager () {\n    return Components.classes[\"@mozilla.org/categorymanager;1\"]\n           .getService(Ci.nsICategoryManager);\n  }, IterSimpleEnumerator:(function XPCU_IterSimpleEnumerator(e, i)\n  {\n    while (e.hasMoreElements())\n      yield e.getNext().QueryInterface(i);\n  }), IterStringEnumerator:(function XPCU_IterStringEnumerator(e)\n  {\n    while (e.hasMore())\n      yield e.getNext();\n  }), _getFactory:(function XPCOMUtils__getFactory(component) {\n    var factory = component.prototype._xpcom_factory;\n    if (!factory) {\n      factory = {\n        createInstance: function(outer, iid) {\n          if (outer)\n            throw Cr.NS_ERROR_NO_AGGREGATION;\n          return (new component()).QueryInterface(iid);\n        }\n      }\n    }\n    return factory;\n  }), importRelative:(function XPCOMUtils__importRelative(that, path) {\n    if (!(\"__URI__\" in that))\n      throw Error(\"importRelative may only be used from a JSM, and its first argument \"+\n                  \"must be that JSM's global object (hint: use this)\");\n    let uri = that.__URI__;\n    let i = uri.lastIndexOf(\"/\");\n    Components.utils.import(uri.substring(0, i+1) + path, that);\n  }), generateSingletonFactory:(function XPCOMUtils_generateSingletonFactory(aServiceConstructor) {\n    return {\n      _instance: null,\n      createInstance: function XPCU_SF_createInstance(aOuter, aIID) {\n        if (aOuter !== null) {\n          throw Cr.NS_ERROR_NO_AGGREGATION;\n        }\n        if (this._instance === null) {\n          this._instance = new aServiceConstructor();\n        }\n        return this._instance.QueryInterface(aIID);\n      },\n      lockFactory: function XPCU_SF_lockFactory(aDoLock) {\n        throw Cr.NS_ERROR_NOT_IMPLEMENTED;\n      },\n      QueryInterface: XPCOMUtils.generateQI([Ci.nsIFactory])\n    };\n  })})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj29"
+      }
+    },
+    {
+      "name": "addEventListener",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function addEventListener() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "addEventListener",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj42"
+      }
+    },
+    {
+      "name": "alert",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function alert() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "alert",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj66"
+      }
+    },
+    {
+      "name": "applicationCache",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "OfflineResourceList",
+        "displayString": "[object OfflineResourceList]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj65"
+      }
+    },
+    {
+      "name": "atob",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function atob() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "atob",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj72"
+      }
+    },
+    {
+      "name": "back",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function back() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "back",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj84"
+      }
+    },
+    {
+      "name": "blur",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function blur() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "blur",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj63"
+      }
+    },
+    {
+      "name": "btoa",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function btoa() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "btoa",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj73"
+      }
+    },
+    {
+      "name": "buildLink",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function buildLink(tab, parent, selected) {\n\"use strict\";\n\n  let a = document.createElement(\"a\");\n  a.onclick = function() {\n    openToolbox(tab);\n  }\n\n  a.textContent = tab.title;\n  a.title = tab.url;\n  if (!a.textContent) {\n    a.textContent = tab.url;\n  }\n  a.href = \"#\";\n\n  if (selected) {\n    a.classList.add(\"selected\");\n  }\n\n  parent.appendChild(a);\n}",
+        "inspectable": false,
+        "functionName": "buildLink",
+        "functionArguments": [
+          "tab",
+          "parent",
+          "selected"
+        ],
+        "actor": "conn0.consoleObj20"
+      }
+    },
+    {
+      "name": "captureEvents",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function captureEvents() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "captureEvents",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj101"
+      }
+    },
+    {
+      "name": "clearInterval",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function clearInterval() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "clearInterval",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj99"
+      }
+    },
+    {
+      "name": "clearTimeout",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function clearTimeout() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "clearTimeout",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj98"
+      }
+    },
+    {
+      "name": "close",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function close() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "close",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj60"
+      }
+    },
+    {
+      "name": "closed",
+      "configurable": true,
+      "enumerable": true,
+      "value": false
+    },
+    {
+      "name": "confirm",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function confirm() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "confirm",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj67"
+      }
+    },
+    {
+      "name": "console",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({log:function log() {\n    [native code]\n}, info:function info() {\n    [native code]\n}, warn:function warn() {\n    [native code]\n}, error:function error() {\n    [native code]\n}, debug:function debug() {\n    [native code]\n}, trace:function trace() {\n    [native code]\n}, dir:function dir() {\n    [native code]\n}, group:function group() {\n    [native code]\n}, groupCollapsed:function groupCollapsed() {\n    [native code]\n}, groupEnd:function groupEnd() {\n    [native code]\n}, time:function time() {\n    [native code]\n}, timeEnd:function timeEnd() {\n    [native code]\n}, profile:function profile() {\n    [native code]\n}, profileEnd:function profileEnd() {\n    [native code]\n}, __noSuchMethod__:function __noSuchMethod__() {\n    [native code]\n}})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj36"
+      }
+    },
+    {
+      "name": "constructor",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": false,
+        "actor": "conn0.consoleObj37"
+      }
+    },
+    {
+      "name": "content",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj81"
+      }
+    },
+    {
+      "name": "controllers",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "XULControllers",
+        "displayString": "[object XULControllers]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj83"
+      }
+    },
+    {
+      "name": "crypto",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "Crypto",
+        "displayString": "[object Crypto]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj82"
+      }
+    },
+    {
+      "name": "debuggerSocketConnect",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function debuggerSocketConnect(aHost, aPort)\n{\n\"use strict\";\n\n  let s = socketTransportService.createTransport(null, 0, aHost, aPort, null);\n  let transport = new DebuggerTransport(s.openInputStream(0, 0, 0),\n                                        s.openOutputStream(0, 0, 0));\n  return transport;\n})",
+        "inspectable": false,
+        "functionName": "debuggerSocketConnect",
+        "functionArguments": [
+          "aHost",
+          "aPort"
+        ],
+        "actor": "conn0.consoleObj33"
+      }
+    },
+    {
+      "name": "defaultStatus",
+      "configurable": true,
+      "enumerable": true,
+      "value": ""
+    },
+    {
+      "name": "devicePixelRatio",
+      "configurable": true,
+      "enumerable": true,
+      "value": 1
+    },
+    {
+      "name": "disableExternalCapture",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function disableExternalCapture() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "disableExternalCapture",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj105"
+      }
+    },
+    {
+      "name": "dispatchEvent",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function dispatchEvent() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "dispatchEvent",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj44"
+      }
+    },
+    {
+      "name": "document",
+      "configurable": true,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "HTMLDocument",
+        "displayString": "[object HTMLDocument]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj12"
+      }
+    },
+    {
+      "name": "dump",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function dump() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "dump",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj45"
+      }
+    },
+    {
+      "name": "enableExternalCapture",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function enableExternalCapture() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "enableExternalCapture",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj104"
+      }
+    },
+    {
+      "name": "external",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "[xpconnect wrapped (nsISupports, nsISidebar, nsISidebarExternal)]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj38"
+      }
+    },
+    {
+      "name": "find",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function find() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "find",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj92"
+      }
+    },
+    {
+      "name": "focus",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function focus() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "focus",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj62"
+      }
+    },
+    {
+      "name": "forward",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function forward() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "forward",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj85"
+      }
+    },
+    {
+      "name": "frameElement",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "frames",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj52"
+      }
+    },
+    {
+      "name": "fullScreen",
+      "configurable": true,
+      "enumerable": true,
+      "value": false
+    },
+    {
+      "name": "gClient",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "gConnectionTimeout",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "gDevTools",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({_tools:{}, _toolboxes:{}, destroy:function () {\n    [native code]\n}, on:function EventEmitter_on() {\n    [native code]\n}, off:function EventEmitter_off() {\n    [native code]\n}, once:function EventEmitter_once() {\n    [native code]\n}, emit:function EventEmitter_emit() {\n    [native code]\n}})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj26"
+      }
+    },
+    {
+      "name": "gDevToolsBrowser",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "({_trackedBrowserWindows:{}, toggleToolboxCommand:(function (gBrowser) {\n\"use strict\";\n\n    let target = TargetFactory.forTab(gBrowser.selectedTab);\n    let toolbox = gDevTools.getToolbox(target);\n\n    toolbox ? toolbox.destroy() : gDevTools.showToolbox(target);\n  }), selectToolCommand:(function (gBrowser, toolId) {\n\"use strict\";\n\n    let target = TargetFactory.forTab(gBrowser.selectedTab);\n    let toolbox = gDevTools.getToolbox(target);\n\n    if (toolbox && toolbox.currentToolId == toolId) {\n      if (toolbox.hostType == Toolbox.HostType.WINDOW) {\n        toolbox.raise();\n      } else {\n        toolbox.destroy();\n      }\n    } else {\n      gDevTools.showToolbox(target, toolId);\n    }\n  }), openConnectScreen:(function (gBrowser) {\n\"use strict\";\n\n    gBrowser.selectedTab = gBrowser.addTab(\"chrome://browser/content/devtools/connect.xhtml\");\n  }), registerBrowserWindow:(function DT_registerBrowserWindow(win) {\n\"use strict\";\n\n    gDevToolsBrowser._trackedBrowserWindows.add(win);\n    gDevToolsBrowser._addAllToolsToMenu(win.document);\n\n    let tabContainer = win.document.getElementById(\"tabbrowser-tabs\")\n    tabContainer.addEventListener(\"TabSelect\",\n                                  gDevToolsBrowser._updateMenuCheckbox, false);\n  }), attachKeybindingsToBrowser:(function DT_attachKeybindingsToBrowser(doc, keys) {\n\"use strict\";\n\n    let devtoolsKeyset = doc.getElementById(\"devtoolsKeyset\");\n    if (!devtoolsKeyset) {\n      devtoolsKeyset = doc.createElement(\"keyset\");\n      devtoolsKeyset.setAttribute(\"id\", \"devtoolsKeyset\");\n    }\n    devtoolsKeyset.appendChild(keys);\n    let mainKeyset = doc.getElementById(\"mainKeyset\");\n    mainKeyset.parentNode.insertBefore(devtoolsKeyset, mainKeyset);\n  }), _addToolToWindows:(function DT_addToolToWindows(toolDefinition) {\n\"use strict\";\n\n    // We need to insert the new tool in the right place, which means knowing\n    // the tool that comes before the tool that we're trying to add\n    let allDefs = gDevTools.getToolDefinitionArray();\n    let prevDef;\n    for (let def of allDefs) {\n      if (def === toolDefinition) {\n        break;\n      }\n      prevDef = def;\n    }\n\n    for (let win of gDevToolsBrowser._trackedBrowserWindows) {\n      let doc = win.document;\n      let elements = gDevToolsBrowser._createToolMenuElements(toolDefinition, doc);\n\n      doc.getElementById(\"mainCommandSet\").appendChild(elements.cmd);\n\n      if (elements.key) {\n        this.attachKeybindingsToBrowser(doc, elements.key);\n      }\n\n      doc.getElementById(\"mainBroadcasterSet\").appendChild(elements.bc);\n\n      let amp = doc.getElementById(\"appmenu_webDeveloper_popup\");\n      if (amp) {\n        let ref = (prevDef != null) ?\n            doc.getElementById(\"appmenuitem_\" + prevDef.id).nextSibling :\n            doc.getElementById(\"appmenu_devtools_separator\");\n\n        amp.insertBefore(elements.appmenuitem, ref);\n      }\n\n      let mp = doc.getElementById(\"menuWebDeveloperPopup\");\n      let ref = (prevDef != null) ?\n          doc.getElementById(\"menuitem_\" + prevDef.id).nextSibling :\n          doc.getElementById(\"menu_devtools_separator\");\n      mp.insertBefore(elements.menuitem, ref);\n    }\n  }), _addAllToolsToMenu:(function DT_addAllToolsToMenu(doc) {\n\"use strict\";\n\n    let fragCommands = doc.createDocumentFragment();\n    let fragKeys = doc.createDocumentFragment();\n    let fragBroadcasters = doc.createDocumentFragment();\n    let fragAppMenuItems = doc.createDocumentFragment();\n    let fragMenuItems = doc.createDocumentFragment();\n\n    for (let toolDefinition of gDevTools.getToolDefinitionArray()) {\n      let elements = gDevToolsBrowser._createToolMenuElements(toolDefinition, doc);\n\n      if (!elements) {\n        return;\n      }\n\n      fragCommands.appendChild(elements.cmd);\n      if (elements.key) {\n        fragKeys.appendChild(elements.key);\n      }\n      fragBroadcasters.appendChild(elements.bc);\n      fragAppMenuItems.appendChild(elements.appmenuitem);\n      fragMenuItems.appendChild(elements.menuitem);\n    }\n\n    let mcs = doc.getElementById(\"mainCommandSet\");\n    mcs.appendChild(fragCommands);\n\n    this.attachKeybindingsToBrowser(doc, fragKeys);\n\n    let mbs = doc.getElementById(\"mainBroadcasterSet\");\n    mbs.appendChild(fragBroadcasters);\n\n    let amp = doc.getElementById(\"appmenu_webDeveloper_popup\");\n    if (amp) {\n      let amps = doc.getElementById(\"appmenu_devtools_separator\");\n      amp.insertBefore(fragAppMenuItems, amps);\n    }\n\n    let mp = doc.getElementById(\"menuWebDeveloperPopup\");\n    let mps = doc.getElementById(\"menu_devtools_separator\");\n    mp.insertBefore(fragMenuItems, mps);\n  }), _createToolMenuElements:(function DT_createToolMenuElements(toolDefinition, doc) {\n\"use strict\";\n\n    let id = toolDefinition.id;\n\n    // Prevent multiple entries for the same tool.\n    if (doc.getElementById(\"Tools:\" + id)) {\n      return;\n    }\n\n    let cmd = doc.createElement(\"command\");\n    cmd.id = \"Tools:\" + id;\n    cmd.setAttribute(\"oncommand\",\n        'gDevToolsBrowser.selectToolCommand(gBrowser, \"' + id + '\");');\n\n    let key = null;\n    if (toolDefinition.key) {\n      key = doc.createElement(\"key\");\n      key.id = \"key_\" + id;\n\n      if (toolDefinition.key.startsWith(\"VK_\")) {\n        key.setAttribute(\"keycode\", toolDefinition.key);\n      } else {\n        key.setAttribute(\"key\", toolDefinition.key);\n      }\n\n      key.setAttribute(\"command\", cmd.id);\n      key.setAttribute(\"modifiers\", toolDefinition.modifiers);\n    }\n\n    let bc = doc.createElement(\"broadcaster\");\n    bc.id = \"devtoolsMenuBroadcaster_\" + id;\n    bc.setAttribute(\"label\", toolDefinition.label);\n    bc.setAttribute(\"command\", cmd.id);\n\n    if (key) {\n      bc.setAttribute(\"key\", \"key_\" + id);\n    }\n\n    let appmenuitem = doc.createElement(\"menuitem\");\n    appmenuitem.id = \"appmenuitem_\" + id;\n    appmenuitem.setAttribute(\"observes\", \"devtoolsMenuBroadcaster_\" + id);\n\n    let menuitem = doc.createElement(\"menuitem\");\n    menuitem.id = \"menuitem_\" + id;\n    menuitem.setAttribute(\"observes\", \"devtoolsMenuBroadcaster_\" + id);\n\n    if (toolDefinition.accesskey) {\n      menuitem.setAttribute(\"accesskey\", toolDefinition.accesskey);\n    }\n\n    return {\n      cmd: cmd,\n      key: key,\n      bc: bc,\n      appmenuitem: appmenuitem,\n      menuitem: menuitem\n    };\n  }), _updateMenuCheckbox:(function DT_updateMenuCheckbox() {\n\"use strict\";\n\n    for (let win of gDevToolsBrowser._trackedBrowserWindows) {\n\n      let hasToolbox = false;\n      if (TargetFactory.isKnownTab(win.gBrowser.selectedTab)) {\n        let target = TargetFactory.forTab(win.gBrowser.selectedTab);\n        if (gDevTools._toolboxes.has(target)) {\n          hasToolbox = true;\n        }\n      }\n\n      let broadcaster = win.document.getElementById(\"devtoolsMenuBroadcaster_DevToolbox\");\n      if (hasToolbox) {\n        broadcaster.setAttribute(\"checked\", \"true\");\n      } else {\n        broadcaster.removeAttribute(\"checked\");\n      }\n    }\n  }), _removeToolFromWindows:(function DT_removeToolFromWindows(toolId) {\n\"use strict\";\n\n    for (let win of gDevToolsBrowser._trackedBrowserWindows) {\n      gDevToolsBrowser._removeToolFromMenu(toolId, win.document);\n    }\n  }), _removeToolFromMenu:(function DT_removeToolFromMenu(toolId, doc) {\n\"use strict\";\n\n    let command = doc.getElementById(\"Tools:\" + toolId);\n    if (command) {\n      command.parentNode.removeChild(command);\n    }\n\n    let key = doc.getElementById(\"key_\" + toolId);\n    if (key) {\n      key.parentNode.removeChild(key);\n    }\n\n    let bc = doc.getElementById(\"devtoolsMenuBroadcaster_\" + toolId);\n    if (bc) {\n      bc.parentNode.removeChild(bc);\n    }\n\n    let appmenuitem = doc.getElementById(\"appmenuitem_\" + toolId);\n    if (appmenuitem) {\n      appmenuitem.parentNode.removeChild(appmenuitem);\n    }\n\n    let menuitem = doc.getElementById(\"menuitem_\" + toolId);\n    if (menuitem) {\n      menuitem.parentNode.removeChild(menuitem);\n    }\n  }), forgetBrowserWindow:(function DT_forgetBrowserWindow(win) {\n\"use strict\";\n\n    gDevToolsBrowser._trackedBrowserWindows.delete(win);\n\n    // Destroy toolboxes for closed window\n    for (let [target, toolbox] of gDevTools._toolboxes) {\n      if (toolbox.frame && toolbox.frame.ownerDocument.defaultView == win) {\n        toolbox.destroy();\n      }\n    }\n\n    let tabContainer = win.document.getElementById(\"tabbrowser-tabs\")\n    tabContainer.removeEventListener(\"TabSelect\",\n                                     gDevToolsBrowser._updateMenuCheckbox, false);\n  }), destroy:(function () {\n\"use strict\";\n\n    Services.obs.removeObserver(gDevToolsBrowser.destroy, \"quit-application\");\n  })})",
+        "inspectable": true,
+        "actor": "conn0.consoleObj28"
+      }
+    },
+    {
+      "name": "getComputedStyle",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function getComputedStyle() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "getComputedStyle",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj50"
+      }
+    },
+    {
+      "name": "getDefaultComputedStyle",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function getDefaultComputedStyle() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "getDefaultComputedStyle",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj78"
+      }
+    },
+    {
+      "name": "getInterface",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function getInterface() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "getInterface",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj15"
+      }
+    },
+    {
+      "name": "getSelection",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function getSelection() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "getSelection",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj48"
+      }
+    },
+    {
+      "name": "handleConnectionTimeout",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function handleConnectionTimeout() {\n\"use strict\";\n\n  showError(\"timeout\");\n}",
+        "inspectable": false,
+        "functionName": "handleConnectionTimeout",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj22"
+      }
+    },
+    {
+      "name": "history",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "History",
+        "displayString": "[object History]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj53"
+      }
+    },
+    {
+      "name": "home",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function home() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "home",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj86"
+      }
+    },
+    {
+      "name": "indexedDB",
+      "configurable": true,
+      "enumerable": true,
+      "get": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function indexedDB() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "indexedDB",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj108"
+      },
+      "set": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "innerHeight",
+      "configurable": true,
+      "enumerable": true,
+      "value": 1058
+    },
+    {
+      "name": "innerWidth",
+      "configurable": true,
+      "enumerable": true,
+      "value": 960
+    },
+    {
+      "name": "l10n",
+      "configurable": true,
+      "enumerable": true,
+      "get": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "(function () {\n        delete aObject[aName];\n        return aObject[aName] = aLambda.apply(aObject);\n      })",
+        "inspectable": false,
+        "functionArguments": [],
+        "actor": "conn0.consoleObj35"
+      },
+      "set": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "length",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "localStorage",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true
+    },
+    {
+      "name": "location",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Location",
+        "displayString": "chrome://browser/content/devtools/connect.xhtml#",
+        "inspectable": true,
+        "actor": "conn0.consoleObj14"
+      }
+    },
+    {
+      "name": "locationbar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj54"
+      }
+    },
+    {
+      "name": "matchMedia",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function matchMedia() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "matchMedia",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj74"
+      }
+    },
+    {
+      "name": "menubar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj55"
+      }
+    },
+    {
+      "name": "moveBy",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function moveBy() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "moveBy",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj88"
+      }
+    },
+    {
+      "name": "moveTo",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function moveTo() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "moveTo",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj87"
+      }
+    },
+    {
+      "name": "mozAnimationStartTime",
+      "configurable": true,
+      "enumerable": true,
+      "value": 1380690329058
+    },
+    {
+      "name": "mozCancelAnimationFrame",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function mozCancelAnimationFrame() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "mozCancelAnimationFrame",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj94"
+      }
+    },
+    {
+      "name": "mozCancelRequestAnimationFrame",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function mozCancelRequestAnimationFrame() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "mozCancelRequestAnimationFrame",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj95"
+      }
+    },
+    {
+      "name": "mozIndexedDB",
+      "configurable": true,
+      "enumerable": true,
+      "get": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function mozIndexedDB() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "mozIndexedDB",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj109"
+      },
+      "set": {
+        "type": "undefined"
+      }
+    },
+    {
+      "name": "mozInnerScreenX",
+      "configurable": true,
+      "enumerable": true,
+      "value": 960
+    },
+    {
+      "name": "mozInnerScreenY",
+      "configurable": true,
+      "enumerable": true,
+      "value": 104
+    },
+    {
+      "name": "mozPaintCount",
+      "configurable": true,
+      "enumerable": true,
+      "value": 19
+    },
+    {
+      "name": "mozRequestAnimationFrame",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function mozRequestAnimationFrame() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "mozRequestAnimationFrame",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj93"
+      }
+    },
+    {
+      "name": "name",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": ""
+    },
+    {
+      "name": "navigator",
+      "configurable": false,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "Navigator",
+        "displayString": "[object Navigator]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj64"
+      }
+    },
+    {
+      "name": "onConnectionReady",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function onConnectionReady(aType, aTraits) {\n\"use strict\";\n\n  clearTimeout(gConnectionTimeout);\n  gClient.listTabs(function(aResponse) {\n    document.body.classList.remove(\"connecting\");\n    document.body.classList.add(\"actors-mode\");\n\n    let parent = document.getElementById(\"tabActors\");\n\n    // Add Global Process debugging...\n    let globals = JSON.parse(JSON.stringify(aResponse));\n    delete globals.tabs;\n    delete globals.selected;\n    // ...only if there are appropriate actors (a 'from' property will always\n    // be there).\n\n    // Add one entry for each open tab.\n    for (let i = 0; i < aResponse.tabs.length; i++) {\n      buildLink(aResponse.tabs[i], parent, i == aResponse.selected);\n    }\n\n    let gParent = document.getElementById(\"globalActors\");\n\n    // Build the Remote Process button\n    if (Object.keys(globals).length > 1) {\n      let a = document.createElement(\"a\");\n      a.onclick = function() {\n        openToolbox(globals, true);\n\n      }\n      a.title = a.textContent = window.l10n.GetStringFromName(\"mainProcess\");\n      a.className = \"remote-process\";\n      a.href = \"#\";\n      gParent.appendChild(a);\n    }\n    // Move the selected tab on top\n    let selectedLink = parent.querySelector(\"a.selected\");\n    if (selectedLink) {\n      parent.insertBefore(selectedLink, parent.firstChild);\n    }\n\n    // Ensure the first link is focused\n    let firstLink = parent.querySelector(\"a:first-of-type\");\n    if (firstLink) {\n      firstLink.focus();\n    }\n\n  });\n}",
+        "inspectable": false,
+        "functionName": "onConnectionReady",
+        "functionArguments": [
+          "aType",
+          "aTraits"
+        ],
+        "actor": "conn0.consoleObj19"
+      }
+    },
+    {
+      "name": "onabort",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onafterprint",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onafterscriptexecute",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onbeforeprint",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onbeforescriptexecute",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onbeforeunload",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onblur",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncanplay",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncanplaythrough",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onclick",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncontextmenu",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncopy",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oncut",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondblclick",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondevicelight",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondevicemotion",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondeviceorientation",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondeviceproximity",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondrag",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragend",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragenter",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragleave",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragover",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondragstart",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondrop",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ondurationchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onemptied",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onended",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onerror",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onfocus",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onhashchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oninput",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "oninvalid",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onkeydown",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onkeypress",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onkeyup",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onload",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onloadeddata",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onloadedmetadata",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onloadstart",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmessage",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmousedown",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseenter",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseleave",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmousemove",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseout",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseover",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmouseup",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmozfullscreenchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmozfullscreenerror",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmozpointerlockchange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onmozpointerlockerror",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onoffline",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ononline",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpagehide",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpageshow",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpaste",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpause",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onplay",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onplaying",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onpopstate",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onprogress",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onratechange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onreset",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onresize",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onscroll",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onseeked",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onseeking",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onselect",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onshow",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onstalled",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onsubmit",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onsuspend",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "ontimeupdate",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onunload",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onuserproximity",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onvolumechange",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onwaiting",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "onwheel",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "open",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function open() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "open",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj106"
+      }
+    },
+    {
+      "name": "openDialog",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function openDialog() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "openDialog",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj107"
+      }
+    },
+    {
+      "name": "openToolbox",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function openToolbox(form, chrome=false) {\n\"use strict\";\n\n  let options = {\n    form: form,\n    client: gClient,\n    chrome: chrome\n  };\n  let target = TargetFactory.forTab(options);\n  target.makeRemote(options).then(function() {\n    gDevTools.showToolbox(target, \"webconsole\", Toolbox.HostType.WINDOW);\n    window.close();\n  });\n}",
+        "inspectable": false,
+        "functionName": "openToolbox",
+        "functionArguments": [
+          "form",
+          "chrome=false"
+        ],
+        "actor": "conn0.consoleObj23"
+      }
+    },
+    {
+      "name": "opener",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "outerHeight",
+      "configurable": true,
+      "enumerable": true,
+      "value": 1174
+    },
+    {
+      "name": "outerWidth",
+      "configurable": true,
+      "enumerable": true,
+      "value": 960
+    },
+    {
+      "name": "pageXOffset",
+      "configurable": true
+[55] from server:
+,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "pageYOffset",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "parent",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj46"
+      }
+    },
+    {
+      "name": "performance",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Performance",
+        "displayString": "[object Performance]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj41"
+      }
+    },
+    {
+      "name": "personalbar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj56"
+      }
+    },
+    {
+      "name": "pkcs11",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "postMessage",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function postMessage() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "postMessage",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj71"
+      }
+    },
+    {
+      "name": "print",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function print() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "print",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj69"
+      }
+    },
+    {
+      "name": "prompt",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function prompt() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "prompt",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj68"
+      }
+    },
+    {
+      "name": "releaseEvents",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function releaseEvents() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "releaseEvents",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj102"
+      }
+    },
+    {
+      "name": "removeEventListener",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function removeEventListener() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "removeEventListener",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj43"
+      }
+    },
+    {
+      "name": "resizeBy",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function resizeBy() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "resizeBy",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj90"
+      }
+    },
+    {
+      "name": "resizeTo",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function resizeTo() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "resizeTo",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj89"
+      }
+    },
+    {
+      "name": "routeEvent",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function routeEvent() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "routeEvent",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj103"
+      }
+    },
+    {
+      "name": "screen",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "Screen",
+        "displayString": "[object Screen]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj75"
+      }
+    },
+    {
+      "name": "screenX",
+      "configurable": true,
+      "enumerable": true,
+      "value": 960
+    },
+    {
+      "name": "screenY",
+      "configurable": true,
+      "enumerable": true,
+      "value": 22
+    },
+    {
+      "name": "scroll",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scroll() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scroll",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj76"
+      }
+    },
+    {
+      "name": "scrollBy",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scrollBy() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scrollBy",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj77"
+      }
+    },
+    {
+      "name": "scrollByLines",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scrollByLines() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scrollByLines",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj49"
+      }
+    },
+    {
+      "name": "scrollByPages",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scrollByPages() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scrollByPages",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj79"
+      }
+    },
+    {
+      "name": "scrollMaxX",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "scrollMaxY",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "scrollTo",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scrollTo() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scrollTo",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj51"
+      }
+    },
+    {
+      "name": "scrollX",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "scrollY",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "scrollbars",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj57"
+      }
+    },
+    {
+      "name": "self",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj47"
+      }
+    },
+    {
+      "name": "sessionStorage",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true
+    },
+    {
+      "name": "setInterval",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function setInterval() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "setInterval",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj97"
+      }
+    },
+    {
+      "name": "setResizable",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function setResizable() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "setResizable",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj100"
+      }
+    },
+    {
+      "name": "setTimeout",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function setTimeout() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "setTimeout",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj96"
+      }
+    },
+    {
+      "name": "showError",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function showError(type) {\n\"use strict\";\n\n  document.body.className = \"error\";\n  let activeError = document.querySelector(\".error-message.active\");\n  if (activeError) {\n    activeError.classList.remove(\"active\");\n  }\n  activeError = document.querySelector(\".error-\" + type);\n  if (activeError) {\n    activeError.classList.add(\"active\");\n  }\n}",
+        "inspectable": false,
+        "functionName": "showError",
+        "functionArguments": [
+          "type"
+        ],
+        "actor": "conn0.consoleObj21"
+      }
+    },
+    {
+      "name": "showModalDialog",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function showModalDialog() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "showModalDialog",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj70"
+      }
+    },
+    {
+      "name": "sidebar",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "[xpconnect wrapped (nsISupports, nsISidebar, nsISidebarExternal)]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj40"
+      }
+    },
+    {
+      "name": "sizeToContent",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function sizeToContent() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "sizeToContent",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj80"
+      }
+    },
+    {
+      "name": "status",
+      "configurable": true,
+      "enumerable": true,
+      "value": ""
+    },
+    {
+      "name": "statusbar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj58"
+      }
+    },
+    {
+      "name": "stop",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function stop() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "stop",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj61"
+      }
+    },
+    {
+      "name": "submit",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function submit() {\n\"use strict\";\n\n  // Show the \"connecting\" screen\n  document.body.classList.add(\"connecting\");\n\n  // Save the host/port values\n  let host = document.getElementById(\"host\").value;\n  Services.prefs.setCharPref(\"devtools.debugger.remote-host\", host);\n\n  let port = document.getElementById(\"port\").value;\n  Services.prefs.setIntPref(\"devtools.debugger.remote-port\", port);\n\n  // Initiate the connection\n  let transport = debuggerSocketConnect(host, port);\n  gClient = new DebuggerClient(transport);\n  let delay = Services.prefs.getIntPref(\"devtools.debugger.remote-timeout\");\n  gConnectionTimeout = setTimeout(handleConnectionTimeout, delay);\n  gClient.connect(onConnectionReady);\n}",
+        "inspectable": false,
+        "functionName": "submit",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj18"
+      }
+    },
+    {
+      "name": "toolbar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj59"
+      }
+    },
+    {
+      "name": "top",
+      "configurable": false,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj16"
+      }
+    },
+    {
+      "name": "updateCommands",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function updateCommands() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "updateCommands",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj91"
+      }
+    },
+    {
+      "name": "window",
+      "configurable": false,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj11"
+      }
+    }
+  ]
+}
+[56] to client:
+,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "pageYOffset",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "parent",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj46"
+      }
+    },
+    {
+      "name": "performance",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Performance",
+        "displayString": "[object Performance]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj41"
+      }
+    },
+    {
+      "name": "personalbar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj56"
+      }
+    },
+    {
+      "name": "pkcs11",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "null"
+      }
+    },
+    {
+      "name": "postMessage",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function postMessage() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "postMessage",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj71"
+      }
+    },
+    {
+      "name": "print",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function print() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "print",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj69"
+      }
+    },
+    {
+      "name": "prompt",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function prompt() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "prompt",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj68"
+      }
+    },
+    {
+      "name": "releaseEvents",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function releaseEvents() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "releaseEvents",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj102"
+      }
+    },
+    {
+      "name": "removeEventListener",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function removeEventListener() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "removeEventListener",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj43"
+      }
+    },
+    {
+      "name": "resizeBy",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function resizeBy() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "resizeBy",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj90"
+      }
+    },
+    {
+      "name": "resizeTo",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function resizeTo() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "resizeTo",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj89"
+      }
+    },
+    {
+      "name": "routeEvent",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function routeEvent() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "routeEvent",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj103"
+      }
+    },
+    {
+      "name": "screen",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "Screen",
+        "displayString": "[object Screen]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj75"
+      }
+    },
+    {
+      "name": "screenX",
+      "configurable": true,
+      "enumerable": true,
+      "value": 960
+    },
+    {
+      "name": "screenY",
+      "configurable": true,
+      "enumerable": true,
+      "value": 22
+    },
+    {
+      "name": "scroll",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scroll() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scroll",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj76"
+      }
+    },
+    {
+      "name": "scrollBy",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scrollBy() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scrollBy",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj77"
+      }
+    },
+    {
+      "name": "scrollByLines",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scrollByLines() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scrollByLines",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj49"
+      }
+    },
+    {
+      "name": "scrollByPages",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scrollByPages() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scrollByPages",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj79"
+      }
+    },
+    {
+      "name": "scrollMaxX",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "scrollMaxY",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "scrollTo",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function scrollTo() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "scrollTo",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj51"
+      }
+    },
+    {
+      "name": "scrollX",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "scrollY",
+      "configurable": true,
+      "enumerable": true,
+      "value": 0
+    },
+    {
+      "name": "scrollbars",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj57"
+      }
+    },
+    {
+      "name": "self",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj47"
+      }
+    },
+    {
+      "name": "sessionStorage",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true
+    },
+    {
+      "name": "setInterval",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function setInterval() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "setInterval",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj97"
+      }
+    },
+    {
+      "name": "setResizable",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function setResizable() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "setResizable",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj100"
+      }
+    },
+    {
+      "name": "setTimeout",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function setTimeout() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "setTimeout",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj96"
+      }
+    },
+    {
+      "name": "showError",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function showError(type) {\n\"use strict\";\n\n  document.body.className = \"error\";\n  let activeError = document.querySelector(\".error-message.active\");\n  if (activeError) {\n    activeError.classList.remove(\"active\");\n  }\n  activeError = document.querySelector(\".error-\" + type);\n  if (activeError) {\n    activeError.classList.add(\"active\");\n  }\n}",
+        "inspectable": false,
+        "functionName": "showError",
+        "functionArguments": [
+          "type"
+        ],
+        "actor": "conn0.consoleObj21"
+      }
+    },
+    {
+      "name": "showModalDialog",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function showModalDialog() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "showModalDialog",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj70"
+      }
+    },
+    {
+      "name": "sidebar",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "object",
+        "className": "Object",
+        "displayString": "[xpconnect wrapped (nsISupports, nsISidebar, nsISidebarExternal)]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj40"
+      }
+    },
+    {
+      "name": "sizeToContent",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function sizeToContent() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "sizeToContent",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj80"
+      }
+    },
+    {
+      "name": "status",
+      "configurable": true,
+      "enumerable": true,
+      "value": ""
+    },
+    {
+      "name": "statusbar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj58"
+      }
+    },
+    {
+      "name": "stop",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function stop() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "stop",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj61"
+      }
+    },
+    {
+      "name": "submit",
+      "configurable": false,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function submit() {\n\"use strict\";\n\n  // Show the \"connecting\" screen\n  document.body.classList.add(\"connecting\");\n\n  // Save the host/port values\n  let host = document.getElementById(\"host\").value;\n  Services.prefs.setCharPref(\"devtools.debugger.remote-host\", host);\n\n  let port = document.getElementById(\"port\").value;\n  Services.prefs.setIntPref(\"devtools.debugger.remote-port\", port);\n\n  // Initiate the connection\n  let transport = debuggerSocketConnect(host, port);\n  gClient = new DebuggerClient(transport);\n  let delay = Services.prefs.getIntPref(\"devtools.debugger.remote-timeout\");\n  gConnectionTimeout = setTimeout(handleConnectionTimeout, delay);\n  gClient.connect(onConnectionReady);\n}",
+        "inspectable": false,
+        "functionName": "submit",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj18"
+      }
+    },
+    {
+      "name": "toolbar",
+      "configurable": true,
+      "enumerable": true,
+      "value": {
+        "type": "object",
+        "className": "BarProp",
+        "displayString": "[object BarProp]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj59"
+      }
+    },
+    {
+      "name": "top",
+      "configurable": false,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj16"
+      }
+    },
+    {
+      "name": "updateCommands",
+      "configurable": true,
+      "enumerable": true,
+      "writable": true,
+      "value": {
+        "type": "function",
+        "className": "Function",
+        "displayString": "function updateCommands() {\n    [native code]\n}",
+        "inspectable": false,
+        "functionName": "updateCommands",
+        "functionArguments": [],
+        "actor": "conn0.consoleObj91"
+      }
+    },
+    {
+      "name": "window",
+      "configurable": false,
+      "enumerable": true,
+      "writable": false,
+      "value": {
+        "type": "object",
+        "className": "Window",
+        "displayString": "[object Window]",
+        "inspectable": true,
+        "actor": "conn0.consoleObj11"
+      }
+    }
+  ]
+}
+[57] from client:
+53:{
+  "to": "conn0.consoleObj39",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj17",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj32",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj31",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj27",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj13",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj34",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj30",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj24",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj25",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj29",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj42",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj66",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj65",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj72",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj84",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj63",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj73",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj20",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj101",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj99",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj98",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj60",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj67",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj36",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj37",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj81",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj83",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj82",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj33",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj105",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj44",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj12",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj45",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj104",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj38",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj92",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj62",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj85",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj52",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj26",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj28",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj50",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj78",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj15",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj48",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj22",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj53",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj86",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj108",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj35",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj14",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj54",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj74",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj55",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj88",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj87",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj94",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj95",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj109",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj93",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj64",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj19",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj106",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj107",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj23",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj46",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj41",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj56",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj71",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj69",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj68",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj102",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj43",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj90",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj89",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj103",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj75",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj76",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj77",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj49",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj79",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj51",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj57",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj47",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj97",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj100",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj96",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj21",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj70",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj40",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj80",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj58",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj61",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj18",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj59",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj16",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj91",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj11",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj10",
+  "type": "release"
+}76:{
+  "to": "conn0.console7",
+  "type": "stopListeners",
+  "listeners": null
+}
+[58] to server:
+53:{
+  "to": "conn0.consoleObj39",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj17",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj32",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj31",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj27",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj13",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj34",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj30",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj24",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj25",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj29",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj42",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj66",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj65",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj72",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj84",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj63",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj73",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj20",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj101",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj99",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj98",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj60",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj67",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj36",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj37",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj81",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj83",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj82",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj33",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj105",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj44",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj12",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj45",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj104",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj38",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj92",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj62",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj85",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj52",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj26",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj28",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj50",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj78",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj15",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj48",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj22",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj53",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj86",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj108",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj35",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj14",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj54",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj74",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj55",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj88",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj87",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj94",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj95",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj109",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj93",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj64",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj19",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj106",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj107",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj23",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj46",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj41",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj56",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj71",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj69",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj68",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj102",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj43",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj90",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj89",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj103",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj75",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj76",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj77",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj49",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj79",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj51",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj57",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj47",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj97",
+  "type": "release"
+}54:{
+  "to": "conn0.consoleObj100",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj96",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj21",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj70",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj40",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj80",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj58",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj61",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj18",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj59",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj16",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj91",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj11",
+  "type": "release"
+}53:{
+  "to": "conn0.consoleObj10",
+  "type": "release"
+}76:{
+  "to": "conn0.console7",
+  "type": "stopListeners",
+  "listeners": null
+}
+[59] from server:
+34:{
+  "from": "conn0.consoleObj39"
+}34:{
+  "from": "conn0.consoleObj17"
+}34:{
+  "from": "conn0.consoleObj32"
+}34:{
+  "from": "conn0.consoleObj31"
+}34:{
+  "from": "conn0.consoleObj27"
+}34:{
+  "from": "conn0.consoleObj13"
+}34:{
+  "from": "conn0.consoleObj34"
+}34:{
+  "from": "conn0.consoleObj30"
+}34:{
+  "from": "conn0.consoleObj24"
+}34:{
+  "from": "conn0.consoleObj25"
+}34:{
+  "from": "conn0.consoleObj29"
+}34:{
+  "from": "conn0.consoleObj42"
+}34:{
+  "from": "conn0.consoleObj66"
+}34:{
+  "from": "conn0.consoleObj65"
+}34:{
+  "from": "conn0.consoleObj72"
+}34:{
+  "from": "conn0.consoleObj84"
+}34:{
+  "from": "conn0.consoleObj63"
+}34:{
+  "from": "conn0.consoleObj73"
+}34:{
+  "from": "conn0.consoleObj20"
+}35:{
+  "from": "conn0.consoleObj101"
+}34:{
+  "from": "conn0.consoleObj99"
+}34:{
+  "from": "conn0.consoleObj98"
+}34:{
+  "from": "conn0.consoleObj60"
+}34:{
+  "from": "conn0.consoleObj67"
+}34:{
+  "from": "conn0.consoleObj36"
+}34:{
+  "from": "conn0.consoleObj37"
+}34:{
+  "from": "conn0.consoleObj81"
+}34:{
+  "from": "conn0.consoleObj83"
+}34:{
+  "from": "conn0.consoleObj82"
+}34:{
+  "from": "conn0.consoleObj33"
+}35:{
+  "from": "conn0.consoleObj105"
+}34:{
+  "from": "conn0.consoleObj44"
+}34:{
+  "from": "conn0.consoleObj12"
+}34:{
+  "from": "conn0.consoleObj45"
+}35:{
+  "from": "conn0.consoleObj104"
+}34:{
+  "from": "conn0.consoleObj38"
+}34:{
+  "from": "conn0.consoleObj92"
+}34:{
+  "from": "conn0.consoleObj62"
+}34:{
+  "from": "conn0.consoleObj85"
+}34:{
+  "from": "conn0.consoleObj52"
+}34:{
+  "from": "conn0.consoleObj26"
+}34:{
+  "from": "conn0.consoleObj28"
+}34:{
+  "from": "conn0.consoleObj50"
+}34:{
+  "from": "conn0.consoleObj78"
+}34:{
+  "from": "conn0.consoleObj15"
+}34:{
+  "from": "conn0.consoleObj48"
+}34:{
+  "from": "conn0.consoleObj22"
+}34:{
+  "from": "conn0.consoleObj53"
+}34:{
+  "from": "conn0.consoleObj86"
+}35:{
+  "from": "conn0.consoleObj108"
+}34:{
+  "from": "conn0.consoleObj35"
+}34:{
+  "from": "conn0.consoleObj14"
+}34:{
+  "from": "conn0.consoleObj54"
+}34:{
+  "from": "conn0.consoleObj74"
+}34:{
+  "from": "conn0.consoleObj55"
+}34:{
+  "from": "conn0.consoleObj88"
+}34:{
+  "from": "conn0.consoleObj87"
+}34:{
+  "from": "conn0.consoleObj94"
+}34:{
+  "from": "conn0.consoleObj95"
+}35:{
+  "from": "conn0.consoleObj109"
+}34:{
+  "from": "conn0.consoleObj93"
+}34:{
+  "from": "conn0.consoleObj64"
+}34:{
+  "from": "conn0.consoleObj19"
+}35:{
+  "from": "conn0.consoleObj106"
+}35:{
+  "from": "conn0.consoleObj107"
+}34:{
+  "from": "conn0.consoleObj23"
+}34:{
+  "from": "conn0.consoleObj46"
+}34:{
+  "from": "conn0.consoleObj41"
+}34:{
+  "from": "conn0.consoleObj56"
+}34:{
+  "from": "conn0.consoleObj71"
+}34:{
+  "from": "conn0.consoleObj69"
+}34:{
+  "from": "conn0.consoleObj68"
+}35:{
+  "from": "conn0.consoleObj102"
+}34:{
+  "from": "conn0.consoleObj43"
+}34:{
+  "from": "conn0.consoleObj90"
+}34:{
+  "from": "conn0.consoleObj89"
+}35:{
+  "from": "conn0.consoleObj103"
+}34:{
+  "from": "conn0.consoleObj75"
+}34:{
+  "from": "conn0.consoleObj76"
+}34:{
+  "from": "conn0.consoleObj77"
+}34:{
+  "from": "conn0.consoleObj49"
+}34:{
+  "from": "conn0.consoleObj79"
+}34:{
+  "from": "conn0.consoleObj51"
+}34:{
+  "from": "conn0.consoleObj57"
+}34:{
+  "from": "conn0.consoleObj47"
+}34:{
+  "from": "conn0.consoleObj97"
+}35:{
+  "from": "conn0.consoleObj100"
+}34:{
+  "from": "conn0.consoleObj96"
+}34:{
+  "from": "conn0.consoleObj21"
+}34:{
+  "from": "conn0.consoleObj70"
+}34:{
+  "from": "conn0.consoleObj40"
+}34:{
+  "from": "conn0.consoleObj80"
+}34:{
+  "from": "conn0.consoleObj58"
+}34:{
+  "from": "conn0.consoleObj61"
+}34:{
+  "from": "conn0.consoleObj18"
+}34:{
+  "from": "conn0.consoleObj59"
+}34:{
+  "from": "conn0.consoleObj16"
+}34:{
+  "from": "conn0.consoleObj91"
+}34:{
+  "from": "conn0.consoleObj11"
+}34:{
+  "from": "conn0.consoleObj10"
+}136:{
+  "stoppedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "from": "conn0.console7"
+}
+[60] to client:
+34:{
+  "from": "conn0.consoleObj39"
+}34:{
+  "from": "conn0.consoleObj17"
+}34:{
+  "from": "conn0.consoleObj32"
+}34:{
+  "from": "conn0.consoleObj31"
+}34:{
+  "from": "conn0.consoleObj27"
+}34:{
+  "from": "conn0.consoleObj13"
+}34:{
+  "from": "conn0.consoleObj34"
+}34:{
+  "from": "conn0.consoleObj30"
+}34:{
+  "from": "conn0.consoleObj24"
+}34:{
+  "from": "conn0.consoleObj25"
+}34:{
+  "from": "conn0.consoleObj29"
+}34:{
+  "from": "conn0.consoleObj42"
+}34:{
+  "from": "conn0.consoleObj66"
+}34:{
+  "from": "conn0.consoleObj65"
+}34:{
+  "from": "conn0.consoleObj72"
+}34:{
+  "from": "conn0.consoleObj84"
+}34:{
+  "from": "conn0.consoleObj63"
+}34:{
+  "from": "conn0.consoleObj73"
+}34:{
+  "from": "conn0.consoleObj20"
+}35:{
+  "from": "conn0.consoleObj101"
+}34:{
+  "from": "conn0.consoleObj99"
+}34:{
+  "from": "conn0.consoleObj98"
+}34:{
+  "from": "conn0.consoleObj60"
+}34:{
+  "from": "conn0.consoleObj67"
+}34:{
+  "from": "conn0.consoleObj36"
+}34:{
+  "from": "conn0.consoleObj37"
+}34:{
+  "from": "conn0.consoleObj81"
+}34:{
+  "from": "conn0.consoleObj83"
+}34:{
+  "from": "conn0.consoleObj82"
+}34:{
+  "from": "conn0.consoleObj33"
+}35:{
+  "from": "conn0.consoleObj105"
+}34:{
+  "from": "conn0.consoleObj44"
+}34:{
+  "from": "conn0.consoleObj12"
+}34:{
+  "from": "conn0.consoleObj45"
+}35:{
+  "from": "conn0.consoleObj104"
+}34:{
+  "from": "conn0.consoleObj38"
+}34:{
+  "from": "conn0.consoleObj92"
+}34:{
+  "from": "conn0.consoleObj62"
+}34:{
+  "from": "conn0.consoleObj85"
+}34:{
+  "from": "conn0.consoleObj52"
+}34:{
+  "from": "conn0.consoleObj26"
+}34:{
+  "from": "conn0.consoleObj28"
+}34:{
+  "from": "conn0.consoleObj50"
+}34:{
+  "from": "conn0.consoleObj78"
+}34:{
+  "from": "conn0.consoleObj15"
+}34:{
+  "from": "conn0.consoleObj48"
+}34:{
+  "from": "conn0.consoleObj22"
+}34:{
+  "from": "conn0.consoleObj53"
+}34:{
+  "from": "conn0.consoleObj86"
+}35:{
+  "from": "conn0.consoleObj108"
+}34:{
+  "from": "conn0.consoleObj35"
+}34:{
+  "from": "conn0.consoleObj14"
+}34:{
+  "from": "conn0.consoleObj54"
+}34:{
+  "from": "conn0.consoleObj74"
+}34:{
+  "from": "conn0.consoleObj55"
+}34:{
+  "from": "conn0.consoleObj88"
+}34:{
+  "from": "conn0.consoleObj87"
+}34:{
+  "from": "conn0.consoleObj94"
+}34:{
+  "from": "conn0.consoleObj95"
+}35:{
+  "from": "conn0.consoleObj109"
+}34:{
+  "from": "conn0.consoleObj93"
+}34:{
+  "from": "conn0.consoleObj64"
+}34:{
+  "from": "conn0.consoleObj19"
+}35:{
+  "from": "conn0.consoleObj106"
+}35:{
+  "from": "conn0.consoleObj107"
+}34:{
+  "from": "conn0.consoleObj23"
+}34:{
+  "from": "conn0.consoleObj46"
+}34:{
+  "from": "conn0.consoleObj41"
+}34:{
+  "from": "conn0.consoleObj56"
+}34:{
+  "from": "conn0.consoleObj71"
+}34:{
+  "from": "conn0.consoleObj69"
+}34:{
+  "from": "conn0.consoleObj68"
+}35:{
+  "from": "conn0.consoleObj102"
+}34:{
+  "from": "conn0.consoleObj43"
+}34:{
+  "from": "conn0.consoleObj90"
+}34:{
+  "from": "conn0.consoleObj89"
+}35:{
+  "from": "conn0.consoleObj103"
+}34:{
+  "from": "conn0.consoleObj75"
+}34:{
+  "from": "conn0.consoleObj76"
+}34:{
+  "from": "conn0.consoleObj77"
+}34:{
+  "from": "conn0.consoleObj49"
+}34:{
+  "from": "conn0.consoleObj79"
+}34:{
+  "from": "conn0.consoleObj51"
+}34:{
+  "from": "conn0.consoleObj57"
+}34:{
+  "from": "conn0.consoleObj47"
+}34:{
+  "from": "conn0.consoleObj97"
+}35:{
+  "from": "conn0.consoleObj100"
+}34:{
+  "from": "conn0.consoleObj96"
+}34:{
+  "from": "conn0.consoleObj21"
+}34:{
+  "from": "conn0.consoleObj70"
+}34:{
+  "from": "conn0.consoleObj40"
+}34:{
+  "from": "conn0.consoleObj80"
+}34:{
+  "from": "conn0.consoleObj58"
+}34:{
+  "from": "conn0.consoleObj61"
+}34:{
+  "from": "conn0.consoleObj18"
+}34:{
+  "from": "conn0.consoleObj59"
+}34:{
+  "from": "conn0.consoleObj16"
+}34:{
+  "from": "conn0.consoleObj91"
+}34:{
+  "from": "conn0.consoleObj11"
+}34:{
+  "from": "conn0.consoleObj10"
+}136:{
+  "stoppedListeners": [
+    "PageError",
+    "ConsoleAPI",
+    "NetworkActivity",
+    "FileActivity"
+  ],
+  "from": "conn0.console7"
+}
+
