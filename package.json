@@ -38,7 +38,12 @@
     "mocha": "~1.13.0",
     "chai": "~1.8.1"
   },
-  "keywords": [],
+  "keywords": [
+    "debugger",
+    "browser",
+    "remote",
+    "proxy"
+  ],
   "dependencies": {
     "optimist": "~0.6.0",
     "q": "~0.9.7",
