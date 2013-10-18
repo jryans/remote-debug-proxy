@@ -1,0 +1,25 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "undef": true,
+  "unused": true,
+
+  "eqnull": true,
+  "esnext": true,
+  "globalstrict": true,
+
+  "node": true,
+
+  "globals": {
+    "describe": false,
+    "it": false,
+    "before": false,
+    "after": false,
+    "beforeEach": false,
+    "afterEach": false
+  }
+}

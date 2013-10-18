@@ -1,6 +1,6 @@
 'use strict';
 
-var should = require('should');
+let should = require('chai').should();
 
 var cauldron = require('../lib/cauldron.js');
 

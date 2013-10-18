@@ -15,6 +15,9 @@ module.exports = function(grunt) {
         src: ['lib/**/*.js']
       },
       test: {
+        options: {
+          jshintrc: 'test/.jshintrc'
+        },
         src: ['test/**/*.js']
       },
     },
@@ -47,7 +50,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
+  grunt.registerTask('lint', 'jshint');
   grunt.registerTask('test', 'simplemocha');
-  grunt.registerTask('default', ['jshint', 'nodeunit']);
+  grunt.registerTask('default', ['lint', 'test']);
 
 };
