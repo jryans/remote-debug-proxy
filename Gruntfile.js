@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     },
     simplemocha: {
       test: {
-        src: ['test/**/*.js'],
+        src: ['test/**/*_test.js'],
         options: {
           ui: 'bdd',
           reporter: 'spec'
