@@ -9,7 +9,7 @@ define([], function () {
     var message = '';
     message += '[' + statusUpdate.id + '] ';
     message += statusUpdate.direction + ' ';
-    message += statusUpdate.actor + ':\n';
+    message += statusUpdate.fullName + ':\n';
     message += JSON.stringify(statusUpdate.packet, null, 2) + '\n';
     $('#status').append(message);
   };
