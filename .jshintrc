@@ -12,5 +12,7 @@
   "esnext": true,
   "globalstrict": true,
 
-  "node": true
+  "node": true,
+
+  "-W078": true
 }
