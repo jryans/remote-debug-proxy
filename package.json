@@ -50,6 +50,6 @@
     "ws": "~0.4.31",
     "heritage": "0.0.0",
     "chalk": "~0.2.1",
-    "websocket-stream": "~0.3.2"
+    "websocket-stream": "jryans/websocket-stream#c7139ae2c2882c2f01c3edcdcdb4bf9a62108b67"
   }
 }
