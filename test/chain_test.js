@@ -2,7 +2,7 @@
 
 let expect = require('chai').expect;
 
-let Chain = require('../lib/chain.js');
+let Chain = require('../lib/chain');
 let IdTransform = require('./id-transform');
 
 describe('Chain', function() {
