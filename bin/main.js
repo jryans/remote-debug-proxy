@@ -2,7 +2,7 @@
 'use strict';
 
 let opts = require('optimist').argv;
-let cauldron = require('../lib/cauldron');
+let remote-debug-proxy = require('../lib/remote-debug-proxy');
 
 let specKey;
 if (opts.f) {
@@ -11,4 +11,4 @@ if (opts.f) {
   specKey = 'Chrome 32';
 }
 
-cauldron.start(specKey);
+remote-debug-proxy.start(specKey);

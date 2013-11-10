@@ -1,4 +1,4 @@
-# cauldron
+# remote-debug-proxy
 
 This project uses the [MIT](http://jryans.mit-license.org/) license:
 
