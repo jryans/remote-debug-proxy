@@ -1,7 +1,5 @@
-window object successful
-
-[1] from server:
-127:{
+[1] from Firefox 26 server (#0):
+{
   "from": "root",
   "applicationType": "browser",
   "testConnectionPrefix": "conn0.",
@@ -9,8 +7,8 @@ window object successful
     "sources": true
   }
 }
-[2] to client:
-127:{
+[2] to Firefox 26 client (#0):
+{
   "from": "root",
   "applicationType": "browser",
   "testConnectionPrefix": "conn0.",
@@ -18,18 +16,18 @@ window object successful
     "sources": true
   }
 }
-[3] from client:
-40:{
+[3] from Firefox 26 client (#0):
+{
   "to": "root",
   "type": "listTabs"
 }
-[4] to server:
-40:{
+[4] to Firefox 26 server (#0):
+{
   "to": "root",
   "type": "listTabs"
 }
-[5] from server:
-904:{
+[5] from Firefox 26 server (#0):
+{
   "from": "root",
   "selected": 0,
   "tabs": [
@@ -61,8 +59,8 @@ window object successful
   "webappsActor": "conn0.webapps7",
   "deviceActor": "conn0.8"
 }
-[6] to client:
-904:{
+[6] to Firefox 26 client (#0):
+{
   "from": "root",
   "selected": 0,
   "tabs": [
@@ -94,30 +92,30 @@ window object successful
   "webappsActor": "conn0.webapps7",
   "deviceActor": "conn0.8"
 }
-[7] from client:
-44:{
+[7] from Firefox 26 client (#0):
+{
   "to": "conn0.tab1",
   "type": "attach"
 }
-[8] to server:
-44:{
+[8] to Firefox 26 server (#0):
+{
   "to": "conn0.tab1",
   "type": "attach"
 }
-[9] from server:
-87:{
+[9] from Firefox 26 server (#0):
+{
   "type": "tabAttached",
   "threadActor": "conn0.context19",
   "from": "conn0.tab1"
 }
-[10] to client:
-87:{
+[10] to Firefox 26 client (#0):
+{
   "type": "tabAttached",
   "threadActor": "conn0.context19",
   "from": "conn0.tab1"
 }
-[11] from client:
-155:{
+[11] from Firefox 26 client (#0):
+{
   "to": "conn0.console9",
   "type": "startListeners",
   "listeners": [
@@ -127,8 +125,8 @@ window object successful
     "FileActivity"
   ]
 }
-[12] to server:
-155:{
+[12] to Firefox 26 server (#0):
+{
   "to": "conn0.console9",
   "type": "startListeners",
   "listeners": [
@@ -138,8 +136,8 @@ window object successful
     "FileActivity"
   ]
 }
-[13] from server:
-164:{
+[13] from Firefox 26 server (#0):
+{
   "startedListeners": [
     "PageError",
     "ConsoleAPI",
@@ -149,8 +147,8 @@ window object successful
   "nativeConsoleAPI": true,
   "from": "conn0.console9"
 }
-[14] to client:
-164:{
+[14] to Firefox 26 client (#0):
+{
   "startedListeners": [
     "PageError",
     "ConsoleAPI",
@@ -160,8 +158,8 @@ window object successful
   "nativeConsoleAPI": true,
   "from": "conn0.console9"
 }
-[15] from client:
-118:{
+[15] from Firefox 26 client (#0):
+{
   "to": "conn0.console9",
   "type": "getCachedMessages",
   "messageTypes": [
@@ -169,8 +167,8 @@ window object successful
     "ConsoleAPI"
   ]
 }
-[16] to server:
-118:{
+[16] to Firefox 26 server (#0):
+{
   "to": "conn0.console9",
   "type": "getCachedMessages",
   "messageTypes": [
@@ -178,32 +176,32 @@ window object successful
     "ConsoleAPI"
   ]
 }
-[17] from server:
-48:{
+[17] from Firefox 26 server (#0):
+{
   "from": "conn0.console9",
   "messages": []
 }
-[18] to client:
-48:{
+[18] to Firefox 26 client (#0):
+{
   "from": "conn0.console9",
   "messages": []
 }
-[19] from client:
-84:{
+[19] from Firefox 26 client (#0):
+{
   "to": "conn0.console9",
   "type": "autocomplete",
   "text": "w",
   "cursor": 1
 }
-[20] to server:
-84:{
+[20] to Firefox 26 server (#0):
+{
   "to": "conn0.console9",
   "type": "autocomplete",
   "text": "w",
   "cursor": 1
 }
-[21] from server:
-96:{
+[21] from Firefox 26 server (#0):
+{
   "from": "conn0.console9",
   "matches": [
     "watch",
@@ -211,8 +209,8 @@ window object successful
   ],
   "matchProp": "w"
 }
-[22] to client:
-96:{
+[22] to Firefox 26 client (#0):
+{
   "from": "conn0.console9",
   "matches": [
     "watch",
@@ -220,22 +218,22 @@ window object successful
   ],
   "matchProp": "w"
 }
-[23] from client:
-94:{
+[23] from Firefox 26 client (#0):
+{
   "to": "conn0.console9",
   "type": "evaluateJS",
   "text": "window",
   "frameActor": null
 }
-[24] to server:
-94:{
+[24] to Firefox 26 server (#0):
+{
   "to": "conn0.console9",
   "type": "evaluateJS",
   "text": "window",
   "frameActor": null
 }
-[25] from server:
-283:{
+[25] from Firefox 26 server (#0):
+{
   "from": "conn0.console9",
   "input": "window",
   "result": {
@@ -246,12 +244,12 @@ window object successful
     "frozen": false,
     "sealed": false
   },
-  "timestamp": 1380687441073,
+  "timestamp": 1382687576809,
   "exception": null,
   "helperResult": null
 }
-[26] to client:
-283:{
+[26] to Firefox 26 client (#0):
+{
   "from": "conn0.console9",
   "input": "window",
   "result": {
@@ -262,42 +260,11 @@ window object successful
     "frozen": false,
     "sealed": false
   },
-  "timestamp": 1380687441073,
+  "timestamp": 1382687576809,
   "exception": null,
   "helperResult": null
 }
-[27] from server:
-51:{
-  "from": "conn0.tab1",
-  "type": "tabDetached"
-}48:{
-  "from": "root",
-  "type": "tabListChanged"
-}
-[28] to client:
-51:{
-  "from": "conn0.tab1",
-  "type": "tabDetached"
-}48:{
-  "from": "root",
-  "type": "tabListChanged"
-}
-[29] from client:
-46:{
-  "to": "conn0.obj20",
-  "type": "release"
-}76:{
-  "to": "conn0.console9",
-  "type": "stopListeners",
-  "listeners": null
-}
-[30] to server:
-46:{
-  "to": "conn0.obj20",
-  "type": "release"
-}76:{
-  "to": "conn0.console9",
-  "type": "stopListeners",
-  "listeners": null
-}
-
+[27] from Firefox 26 client (#0):
+null
+[28] from Firefox 26 server (#0):
+null
